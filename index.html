@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Técnico y Regulatorio para Linieros GT-CO</title>
+    <title>Examen Técnico Profesional para Linieros de Media Tensión</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .question-card { display: none; }
@@ -15,9 +15,9 @@
 
     <div class="max-w-3xl mx-auto my-4">
         <!-- Header -->
-        <header class="bg-gradient-to-r stroke-cyan-500 from-blue-950 to-blue-800 text-white p-6 rounded-t-xl shadow-lg">
+        <header class="bg-gradient-to-r from-blue-950 to-blue-800 text-white p-6 rounded-t-xl shadow-lg">
             <h1 class="text-2xl font-bold">Evaluación de Competencias: Liniero de Media Tensión</h1>
-            <p class="mt-1 opacity-90 text-xs">60 Preguntas Avanzadas: Normativas CNEE (GT), RETIE (CO) y Herrajes Gráficos</p>
+            <p class="mt-1 opacity-90 text-xs">60 Preguntas de Contenido Único: Técnicas, Herrajes Avanzados, CNEE (GT) y RETIE (CO)</p>
         </header>
 
         <!-- Progress -->
@@ -49,7 +49,7 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-2">Resultado Global de la Evaluación</h2>
             <div class="text-6xl font-black text-blue-900 my-4" id="score-val">0 / 60</div>
             
-            <div id="badge" class="inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4 animate-bounce">
+            <div id="badge" class="inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4">
                 --
             </div>
             <p class="text-gray-700 text-sm max-w-md mx-auto mb-6" id="desc-val">--</p>
@@ -59,12 +59,12 @@
     </div>
 
     <script>
-        // Banco completo de 60 preguntas técnicas balanceadas entre GT, CO, Herrajes y Seguridad
+        // Banco real de 60 preguntas completamente únicas y especializadas
         const questions = [
-            // --- HERRAJES E IMÁGENES (1-10) ---
+            // --- BLOQUE 1: HERRAJES Y ESTRUCTURAS VISUALES ---
             { 
                 q: "Identifique este elemento metálico fundamental para absorber esfuerzos de tracción mecánica en estructuras de fin de línea:", 
-                img: `<svg class="w-32 h-24 text-gray-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M20,30 L60,30 C70,30 80,40 80,50 C80,60 70,70 60,70 L20,70 Z"/><circle cx="20" cy="50" r="8" fill="gray"/><line x1="40" y1="35" x2="40" y2="65" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="65" stroke-width="2"/></svg>`,
+                img: `<svg class="w-32 h-20 text-gray-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M20,30 L60,30 C70,30 80,40 80,50 C80,60 70,70 60,70 L20,70 Z"/><circle cx="20" cy="50" r="8" fill="gray"/><line x1="40" y1="35" x2="40" y2="65" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="65" stroke-width="2"/></svg>`,
                 a: ["Grapa de retención tipo pistola (Aluminio/Acero)", "Manguito de empalme a compresión", "Aislador de suspensión de disco", "Grapa de suspensión oscilante"], 
                 c: 0, 
                 hint: "Sujeta el conductor de aluminio de manera terminal sin cortarlo.",
@@ -74,7 +74,7 @@
             },
             {
                 q: "¿Qué componente de aislamiento rígido empotrado sobre pernos o espigas de cruceta se ilustra aquí?",
-                img: `<svg class="w-24 h-24 text-gray-600" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M30,20 Q50,5 70,20 L65,40 Q50,30 35,40 Z" fill="#ddd"/><path d="M20,50 Q50,30 80,50 L75,70 Q50,55 25,70 Z" fill="#bbb"/><rect x="45" y="70" width="10" height="20" fill="gray"/></svg>`,
+                img: `<svg class="w-24 h-20 text-gray-600" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><path d="M30,20 Q50,5 70,20 L65,40 Q50,30 35,40 Z" fill="#ddd"/><path d="M20,50 Q50,30 80,50 L75,70 Q50,55 25,70 Z" fill="#bbb"/><rect x="45" y="70" width="10" height="20" fill="gray"/></svg>`,
                 a: ["Aislador de Carrete", "Aislador de Espiga / Pin Type", "Aislador Polimérico de Suspensión", "Tensor de hule"],
                 c: 1,
                 hint: "Se monta de forma vertical directamente atornillado arriba de las crucetas.",
@@ -84,7 +84,7 @@
             },
             {
                 q: "Elemento de acero galvanizado triangular usado para acoplar dos cadenas de aisladores en paralelo a una sola grapa de retención:",
-                img: `<svg class="w-24 h-24 text-gray-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><polygon points="10,80 90,80 50,20" fill="#eee"/><circle cx="25" cy="70" r="5" fill="black"/><circle cx="75" cy="70" r="5" fill="black"/><circle cx="50" cy="40" r="5" fill="black"/></svg> `,
+                img: `<svg class="w-24 h-20 text-gray-700" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><polygon points="10,80 90,80 50,20" fill="#eee"/><circle cx="25" cy="70" r="5" fill="black"/><circle cx="75" cy="70" r="5" fill="black"/><circle cx="50" cy="40" r="5" fill="black"/></svg> `,
                 a: ["Abrazadera de tres vías", "Placa Yugo (Link Plate)", "Cruceta angular", "Grapa preformada"],
                 c: 1,
                 hint: "Distribuye la carga mecánica de un conductor hacia dos cadenas de aislamiento.",
@@ -92,7 +92,72 @@
                 search: "Placa yugo para distribucion electrica herraje",
                 cat: "Herrajes Visuales"
             },
-            // --- NORMATIVAS DE GUATEMALA (11-35) ---
+            {
+                q: "Identifique este componente cilíndrico utilizado para realizar la interconexión mecánica y eléctrica de dos extremos de conductor bajo tensión mecánica:",
+                img: `<svg class="w-32 h-12 text-gray-700" viewBox="0 0 120 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="20" y="10" width="80" height="20" rx="3" fill="#eee"/><line x1="40" y1="10" x2="40" y2="30" stroke-dasharray="2,2"/><line x1="80" y1="10" x2="80" y2="30" stroke-dasharray="2,2"/></svg>`,
+                a: ["Manguito de empalme a compresión (Full-Tension)", "Conector de ranuras paralelas", "Grapa tipo perno U", "Terminal premoldeada"],
+                c: 0,
+                hint: "Requiere el uso de una ponchadora hidráulica con dados específicos.",
+                exp: "Los manguitos de empalme a compresión total aseguran que la unión soporte más del 95% de la resistencia a la rotura del conductor.",
+                search: "Manguito de empalme a compresion media tension",
+                cat: "Herrajes Visuales"
+            },
+            {
+                q: "Herraje roscado en forma de gancho cerrado, utilizado para fijar la acanaladura del aislador de suspensión al ojo de la abrazadera del poste:",
+                a: ["Perno ojo (Eye Bolt)", "Eslabón de bola (Ball Clevis)", "Grillete recto", "Tuerca de ojo ojo"],
+                c: 1,
+                hint: "Acopla la cabeza de bola metálica del aislador de disco.",
+                exp: "El eslabón de bola (Ball Clevis) es el adaptador estándar para conectar aisladores de suspensión a estructuras de retención.",
+                search: "Eslabon de bola herraje electrico",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Qué herraje se emplea para sujetar rígidamente los cables de guarda o puestas a tierra en la cima de los postes de concreto?",
+                a: ["Grapa de suspensión para cable de guarda", "Abrazadera de una vía", "Perno pin", "Conector bimetálico"],
+                c: 0,
+                hint: "Protege mecánicamente el cable superior contra vibraciones eólicas.",
+                exp: "La grapa de suspensión fija el cable de guarda en la parte superior para la protección contra descargas atmosféricas.",
+                search: "Grapa de suspension para cable de guarda",
+                cat: "Herrajes"
+            },
+            {
+                q: "El dispositivo mecánico con varillas helicoidales entorchadas que se envuelve sobre el conductor para protegerlo de la fricción en el punto de amarre del aislador de pin se denomina:",
+                a: ["Amortiguador de vibración", "Varilla de armar preformada (Armor Rod)", "Cinta de aluminio de amarre", "Grapa de ranuras paralelas"],
+                c: 1,
+                hint: "Reduce los esfuerzos de flexión y fatiga por vibraciones del viento.",
+                exp: "Las varillas de armar preformadas protegen al conductor de rozamientos, arcos eléctricos en el cuello del aislador y desgastes mecánicos.",
+                search: "Varilla de armar preformada armor rod",
+                cat: "Herrajes"
+            },
+            {
+                q: "Para acoplar un herraje a un poste de concreto de sección circular sin realizar perforaciones en su estructura, se debe utilizar obligatoriamente:",
+                a: ["Abrazadera ajustable de acero galvanizado (tipo omega o de dos piezas)", "Perno pasante de alta resistencia", "Clavos de impacto de acero", "Soldadura exotérmica"],
+                c: 0,
+                hint: "Abraza el perímetro del poste ejerciendo presión de torque.",
+                exp: "Las abrazaderas ajustables envuelven los postes circulares protegiendo el alma de concreto y sus varillas internas de refuerzo.",
+                search: "Abrazadera ajustable postes de concreto distribucion",
+                cat: "Herrajes"
+            },
+            {
+                q: "El eslabón mecánico articulado con un pasador roscado de seguridad removible usado para unir la placa yugo con las abrazaderas del poste se llama:",
+                a: ["Grillete de anclaje (Shackle)", "Eslabón cadena", "Tensor mecánico", "Gancho universal"],
+                c: 0,
+                hint: "Su forma se asemeja a una letra 'U' o lira metálica.",
+                exp: "El grillete es un conector articulado multipropósito indispensable en las cadenas de retención pesadas de media tensión.",
+                search: "Grillete de anclaje herraje electrico",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Qué tipo de cruceta se instala cuando el espacio en la servidumbre de paso es sumamente reducido y todas las fases deben alinearse hacia el lado de la calle?",
+                a: ["Cruceta de bandera (tipo volada)", "Cruceta en V", "Cruceta en cruz convencional", "Cruceta de perfil H"],
+                c: 0,
+                hint: "Sobresale asimétricamente hacia un solo costado del poste.",
+                exp: "La cruceta de bandera desplaza todos los conductores hacia un lado del eje del poste para evitar invasión de propiedad privada.",
+                search: "Cruceta de bandera distribucion electrica",
+                cat: "Herrajes"
+            },
+
+            // --- BLOQUE 2: NORMATIVAS DE GUATEMALA (CNEE/EEGSA/ENERGUATE) ---
             { 
                 q: "Según los estándares de distribución aérea en Guatemala (EEGSA/Energuate), ¿cuál es la tensión nominal de operación entre fases para la red primaria urbana más común?", 
                 a: ["4.16 kV", "13.8 kV", "24.9 kV", "34.5 kV"], 
@@ -138,7 +203,53 @@
                 search: "Trabajo en lineas con tension LST Guatemala",
                 cat: "Normativa Guatemala"
             },
-            // --- NORMATIVAS DE COLOMBIA (36-60) ---
+            {
+                q: "De acuerdo con el Reglamento de la Ley General de Electricidad de Guatemala, la entidad reguladora autónoma que define las tarifas y fiscaliza la calidad de las líneas es:",
+                a: ["El Ministerio de Energía y Minas (MEM)", "La Comisión Nacional de Energía Eléctrica (CNEE)", "El Administrador del Mercado Mayorista (AMM)", "El INDE"],
+                c: 1,
+                hint: "Es un comité técnico de tres miembros nombrados por el Ejecutivo, Universidad y AMM.",
+                exp: "La CNEE es la autoridad encargada de hacer cumplir las normas técnicas de seguridad y calidad del servicio eléctrico en el país.",
+                search: "Comision Nacional de Energia Electrica regulacion",
+                cat: "Normativa Guatemala"
+            },
+            {
+                q: "¿Cuál es la altura mínima integrada libre (vuelo) permitida por las normas de Guatemala para cables primarios de 13.8 kV al cruzar calles urbanas residenciales?",
+                a: ["4.5 metros", "5.0 metros", "5.6 metros", "6.1 metros"],
+                c: 2,
+                hint: "Garantiza el libre tránsito seguro de camiones y maquinaria pesada estándar.",
+                exp: "Las normas de distribución exigen un mínimo de 5.6 metros sobre el pavimento de vías urbanas locales para evitar enganches.",
+                search: "Altura de lineas de distribucion sobre el suelo Guatemala",
+                cat: "Normativa Guatemala"
+            },
+            {
+                q: "Bajo las especificaciones técnicas de EEGSA, las siglas normalizadas para denominar una estructura de paso tangente monofásica en media tensión son:",
+                a: ["V1", "M1-1", "T1", "A1"],
+                c: 1,
+                hint: "La letra 'M' hace alusión a redes Monofásicas aéreas.",
+                exp: "La nomenclatura 'M1-1' corresponde a una estructura monofásica tangente convencional en postes de distribución en Guatemala.",
+                search: "Normas de diseño de lineas de distribucion EEGSA",
+                cat: "Normativa Guatemala"
+            },
+            {
+                q: "En las redes de distribución de Guatemala, ¿cuál es el propósito de instalar un seccionador de cuchillas unipolares de operación manual en un ramal derivado?",
+                a: ["Regular el factor de potencia", "Aislar tramos de red para mantenimientos programados sin desenergizar la troncal principal", "Transformar voltajes de MT a BT", "Amortiguar descargas atmosféricas"],
+                c: 1,
+                hint: "Sirve como punto de apertura visible con pértiga.",
+                exp: "Los seccionadores de cuchilla permiten segmentar y seccionar ramales específicos facilitando la localización de fallas y maniobras seguras.",
+                search: "Seccionador monopolar de cuchillas media tension",
+                cat: "Normativa Guatemala"
+            },
+            {
+                q: "Al hincar un poste de concreto estándar de 11 metros (35 pies) en suelo firme en una obra de distribución en Guatemala, ¿cuál debe ser la profundidad de empotramiento reglamentaria?",
+                a: ["1.00 metros", "1.35 metros", "1.70 metros", "2.10 metros"],
+                c: 2,
+                hint: "Se calcula clásicamente con la fórmula empírica: (Longitud del poste / 10) + 0.6 metros.",
+                exp: "Para un poste de 11 metros, la fórmula da 1.1 + 0.6 = 1.70 metros de profundidad para garantizar la estabilidad mecánica frente a vientos.",
+                search: "Profundidad de empotramiento de postes de concreto electricos",
+                cat: "Normativa Guatemala"
+            },
+
+            // --- BLOQUE 3: NORMATIVAS DE COLOMBIA (RETIE / RESOLUCIÓN 5018) ---
             { 
                 q: "En Colombia, el reglamento gubernamental obligatorio que define las puestas a tierra, distancias de seguridad y uso de herrajes certificados se denomina:", 
                 a: ["RETILAP", "CONTE", "RETIE", "NTC 2050"], 
@@ -183,33 +294,595 @@
                 exp: "El paso 4 es la instalación de las puestas a tierra temporales, creando una zona de equipotencialidad segura ante reconexiones accidentales.",
                 search: "Cinco reglas de oro de la electricidad resolucion 5018",
                 cat: "Normativa Colombia" 
+            },
+            {
+                q: "Según la Resolución 5018 en Colombia, ¿qué documento formal, escrito y firmado en campo es mandatorio diligenciar por la cuadrilla antes de iniciar labores en postes de MT?",
+                a: ["Factura de materiales", "Matriz IPVR general", "Análisis de Trabajo Seguro (ATS/AST) y Permiso de Trabajo Eléctrico", "Bitácora de ruta vehicular"],
+                c: 2,
+                hint: "Evalúa los riesgos específicos del día de trabajo en el sitio exacto de la obra.",
+                exp: "El ATS y el Permiso de Trabajo son documentos legales prerrequisito obligatorios para autorizar cualquier maniobra en el sector eléctrico colombiano.",
+                search: "ATS y permiso de trabajo resolucion 5018",
+                cat: "Normativa Colombia"
+            },
+            {
+                q: "En Colombia, los sistemas de distribución aérea operados por compañías como CODENSA, EPM o AFINIA clasifican el nivel de tensión de 34.5 kV dentro de qué rango regulatorio de la CREG:",
+                a: ["Nivel de Tensión 1", "Nivel de Tensión 2", "Nivel de Tensión 3", "Nivel de Tensión 4"],
+                c: 2,
+                hint: "El Nivel 1 es Baja Tensión; el Nivel 2 cubre de 1 kV a menos de 30 kV.",
+                exp: "El Nivel de Tensión 3 de la CREG agrupa los sistemas eléctricos con tensiones nominales mayores o iguales a 30 kV y menores a 57.5 kV.",
+                search: "Niveles de tension CREG distribucion energia",
+                cat: "Normativa Colombia"
+            },
+            {
+                q: "Al realizar la regla de oro de 'Corte visible o efectivo de las fuentes de tensión' en una estructura colombiana de derivación, ¿cuál es la acción operativa correcta?",
+                a: ["Apagar las luces de los usuarios", "Abrir físicamente los cortacircuitos, seccionadores o retirar puentes de conexión dejando un espacio de aire evidente", "Desconectar solo el cable de neutro", "Girar la perilla del medidor"],
+                c: 1,
+                hint: "El ojo humano del liniero debe constatar físicamente la separación del circuito.",
+                exp: "El corte visible exige la apertura física de los contactos mecánicos de seccionamiento para garantizar que no exista un camino físico para la corriente.",
+                search: "Corte visible o efectivo primera regla de oro",
+                cat: "Normativa Colombia"
+            },
+            {
+                q: "El RETIE prohíbe taxativamente el uso de qué material para la fabricación de postes de distribución primaria en redes públicas debido a su rápida degradación biológica:",
+                a: ["Concreto pretensado", "Acero galvanizado tubular", "Madera nativa no tratada ni inmunizada artificialmente", "Fibra de vidrio polimérica"],
+                c: 2,
+                hint: "Protege la integridad ecológica forestal y la seguridad estructural de las redes.",
+                exp: "La madera nativa sin procesos técnicos normados de inmunización industrial está prohibida por riesgos de pudrición y colapso de líneas.",
+                search: "Requisitos para postes de distribucion RETIE",
+                cat: "Normativa Colombia"
+            },
+            {
+                q: "Bajo la Res. 5018 de Colombia, si ocurre un accidente por arco eléctrico en el poste, el personal de tierra debe llamar inmediatamente al centro de control y aplicar el protocolo:",
+                a: ["PAS (Proteger, Avisar, Socorrer)", "Código de colores", "Cinco reglas de oro al revés", "Plan de contingencia comercial"],
+                c: 0,
+                hint: "Es el estándar internacional de primeros auxilios y rescate seguro.",
+                exp: "El protocolo PAS asegura que el rescatista primero verifique la seguridad del área (Proteger), notifique la emergencia (Avisar) y actúe en el rescate (Socorrer).",
+                search: "Protocolo PAS rescate en alturas sector electrico",
+                cat: "Normativa Colombia"
+            },
+
+            // --- BLOQUE 4: SEGURIDAD CRÍTICA, EPP Y PROCEDIMIENTOS (31-60) ---
+            {
+                q: "¿Qué clase de guantes dieléctricos de hule puro se requieren por norma para ejecutar trabajos a 'Contacto' directo en líneas de 13.2 kV o 13.8 kV?",
+                a: ["Clase 0 (Hasta 1,000 V)", "Clase 1 (Hasta 7,500 V)", "Clase 2 (Hasta 17,000 V)", "Clase 4 (Hasta 36,000 V)"],
+                c: 2,
+                hint: "Debe soportar la tensión de fase con un margen holgado de aislamiento de prueba de laboratorio.",
+                exp: "Los guantes de Clase 2 tienen una tensión máxima de utilización segura de 17,000 V en corriente alterna, cubriendo el rango de 13.2-13.8 kV.",
+                search: "Clasificacion de guantes dielectricos por voltaje clase 2",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Cuál es el propósito principal de colocar siempre guantes de cuero protectores (cubreguantes) sobre los guantes dieléctricos de hule?",
+                a: ["Dar mayor aislamiento eléctrico", "Proteger el hule dieléctrico contra cortes, perforaciones mecánicas, abrasión y grasas en el poste", "Evitar que los guantes se ensucien", "Mejorar la estética del uniforme"],
+                c: 1,
+                hint: "El hule dieléctrico es muy vulnerable a astillas de madera o filos metálicos.",
+                exp: "Los cubreguantes de cuero no aportan aislamiento eléctrico, pero protegen mecánicamente el costoso hule de pinchazos que anularían su propiedades aislantes.",
+                search: "Uso de cubreguantes de cuero para guantes dielectricos",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "Antes de colocarse los guantes dieléctricos para subir al poste, ¿qué prueba rápida de campo obligatoria debe realizar el liniero sin usar equipos de laboratorio?",
+                a: ["Sumergirlos en aceite de linaza", "Prueba de inflado por aire (neumática) manual para detectar fugas, fisuras o poros microscópicos", "Estirarlos fuertemente con las dos manos", "Quemarlos levemente con un encendedor"],
+                c: 1,
+                hint: "Consiste en enrollar el manguito atrapando aire en la palma para inflarlo.",
+                exp: "La prueba de inflado manual permite escuchar u observar escapes de aire que indiquen perforaciones ocultas que causarían una electrocución.",
+                search: "Prueba de aire manual guantes dielectricos liniero",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "El dispositivo de seguridad anticaídas portátil que el liniero sujeta alrededor del fuste del poste de concreto y a su arnés de seguridad para frenar un deslizamiento vertical se conoce como:",
+                a: ["Eslinga de posicionamiento o estrobo con freno automático de fricción", "Línea de vida estática", "Estribo metálico", "Cinturón de lona simple"],
+                c: 0,
+                hint: "Es un elemento textil o de cuerda trenzada regulable con mosquetones de doble seguro.",
+                exp: "La eslinga de posicionamiento asegura al liniero al poste permitiéndole trabajar con las manos libres de forma estable y segura.",
+                search: "Eslinga de posicionamiento para postes trabajos en alturas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "Al realizar la instalación de un juego de puestas a tierra temporales en una estructura de media tensión aérea, ¿cuál es el orden estricto de conexión que dicta la seguridad?",
+                a: ["Primero se conecta a los conductores de fase y de último a la varilla de tierra", "Primero se conecta firmemente la mordaza a la varilla de tierra o bajante y luego las mordazas a las fases", "Se conectan todas al mismo tiempo", "El orden es indiferente siempre que se usen guantes"],
+                c: 1,
+                hint: "Asegura que cualquier energía residual en la línea se derive a tierra inmediatamente sin pasar por el liniero.",
+                exp: "Conectar primero a tierra garantiza que el equipo esté referenciado a potencial cero antes de tocar el conductor potencialmente energizado.",
+                search: "Orden correcto de instalacion de puestas a tierra temporales",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué fenómeno físico peligroso ocurre cuando un circuito inductivo de media tensión se abre bajo carga pesada usando un seccionador de cuchillas que NO cuenta con cámara de extinción ni herramienta Loadbuster?",
+                a: ["Efecto Corona intenso", "Generación de un arco eléctrico violento en el aire que puede causar quemaduras extremas y cortocircuito", "Caída automática de los postes adyacentes", "Inversión de los campos magnéticos"],
+                c: 1,
+                hint: "La corriente intenta seguir fluyendo ionizando el aire circulante.",
+                exp: "Las cuchillas ordinarias no apagan carga; abrirlas bajo carga pesada ioniza el aire creando un arco eléctrico destructivo a altas temperaturas.",
+                search: "Arco electrico por apertura de seccionadores bajo carga",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "El instrumento de medición de seguridad acoplado a una pértiga aislante que emite señales sonoras e intermitencias luminosas al ingresar al campo eléctrico de una red de MT se denomina:",
+                a: ["Telurómetro portátil", "Detector o probador de tensión de proximidad/contacto", "Óhmetro digital", "Pinza voltiamperimétrica"],
+                c: 1,
+                hint: "Confirma visual y acústicamente la tercera regla de oro.",
+                exp: "El detector de tensión ratifica de manera certera la ausencia o presencia de energía antes de tocar físicamente los conductores conductores.",
+                search: "Detector de tension acustico y luminoso para pertiga",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Cuál es la función crítica de las mantas (cubiertas) aislantes y mangueras dieléctricas flexibles instaladas por los linieros LST durante un trabajo a contacto?",
+                a: ["Evitar que los cables se mojen con la lluvia", "Cubrir temporalmente las fases vivas adyacentes y estructuras conectadas a tierra para prevenir cortocircuitos por contacto accidental del liniero", "Aumentar la sección transversal conductora", "Identificar los números de circuito"],
+                c: 1,
+                hint: "Crean una barrera plástica dieléctrica temporal alrededor del cuerpo del operario.",
+                exp: "Las mantas aíslan puntos con diferente potencial que se encuentren en la zona de movimiento directo del liniero de redes primarias.",
+                search: "Mantas y cubiertas aislantes para lineas vivas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "Al operar un equipo cortacircuitos con fusibles quemados empleando una pértiga telescópica, ¿por qué es mandatorio que el liniero use casco de seguridad dieléctrico Tipo B (o Clase E)?",
+                a: ["Para amortiguar golpes de aves", "Porque resiste impactos mecánicos verticales y ofrece protección contra descargas eléctricas de alta tensión en la cabeza (hasta 20,000 V)", "Para sujetar la lámpara frontal de noche", "Por pura disposición estética corporativa"],
+                c: 1,
+                hint: "La Clase E o Tipo B está diseñada específicamente para alta resistencia eléctrica de aislamiento.",
+                exp: "Los cascos Clase E evitan el choque eléctrico por contacto accidental de la cabeza con líneas energizadas o caída de escoria de arcos.",
+                search: "Casco dielectrico clase e tipo b caracteristicas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "Si el análisis de laboratorio del aceite dieléctrico de un transformador de distribución revela una rigidez dieléctrica inferior a 15 kV, esto significa técnicamente que el aceite:",
+                a: ["Está en perfectas condiciones", "Ha perdido su propiedad aislante debido a contaminación con agua o lodos y debe ser filtrado o cambiado", "Se ha vuelto altamente inflamable por exceso de aditivos", "Tiene demasiada viscosidad"],
+                c: 1,
+                hint: "La rigidez mide la capacidad del fluido para soportar voltaje sin perforarse.",
+                exp: "Un nivel bajo de rigidez dieléctrica expone al transformador a fallas por arcos internos destructivos a través del fluido degradado.",
+                search: "Baja rigidez dielectrica en aceite de transformadores",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "¿Qué componente interno del cortacircuitos fusible (fuso) se expande y expulsa los gases calientes hacia afuera del tubo portafusible al fundirse el hilo por cortocircuito?",
+                a: ["El resorte eyector del portafusible", "El tubo de baquelita y teflón interno extintor de arco", "La tuerca de ojo superior", "El herraje de montaje de canal"],
+                c: 1,
+                hint: "Produce el desenganche y caída libre (vuelco) del portafusible.",
+                exp: "El revestimiento interno del tubo genera gases desionizantes ante el calor extremo que extinguen el arco eléctrico y expulsan el remanente del hilo.",
+                search: "Funcionamiento del tubo portafusible cortacircuitos",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "Para disminuir la resistencia de dispersión a tierra de una varilla de cobre tipo Copperweld hincada en un suelo rocoso o seco de baja conductividad, se debe aplicar reglamentariamente:",
+                a: ["Aceite quemado de motor", "Compuestos químicos mejoradores de terreno base gel bentonítico o cemento conductivo certificado", "Sal marina pura con carbón de madera directamente sin tratar", "Agua destilada"],
+                c: 1,
+                hint: "Son aditivos de baja resistividad que no corroen el electrodo metálico.",
+                exp: "Los compuestos mejoradores reducen la resistencia del suelo de forma permanente sin dañar ni disolver el cobre de la varilla por lixiviación.",
+                search: "Compuestos mejoradores de resistividad de puestas a tierra",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "¿Qué tipo de conector bimetálico debe instalarse obligatoriamente al realizar la derivación de un cable de cobre hacia una línea principal de aluminio trenzado (ACSR)?",
+                a: ["Conector tipo perno hendido de cobre puro", "Conector de compresión bimetálico Al-Cu con grasa inhibidora de corrosión galvánica", "Unión simple entorchada con alambre de amarre", "Grapa pistola"],
+                c: 1,
+                hint: "Previene la formación de un par galvánico que destruiría el aluminio.",
+                exp: "Los conectores bimetálicos aíslan el contacto directo del cobre y el aluminio, evitando la corrosión electrolítica acelerada por humedad ambiental.",
+                search: "Conector bimetalico aluminio cobre oxidacion galvanica",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Cuál es la función técnica de los amortiguadores de vibración tipo Stockbridge instalados cerca de los herrajes de retención en vanos de gran longitud?",
+                a: ["Evitar que los pájaros se posen", "Disipar la energía de las ondas mecánicas de alta frecuencia causadas por el viento laminar, previniendo la rotura de hilos del conductor", "Mejorar el flujo de corriente alterna", "Reducir la tensión mecánica horizontal"],
+                c: 1,
+                hint: "Tienen dos masas de pesas metálicas en los extremos de un cable flexible.",
+                exp: "Los amortiguadores transforman las vibraciones eólicas resonantes destructivas en energía térmica por flexión, salvaguardando el cable.",
+                search: "Amortiguador de vibracion tipo stockbridge lineas aéreas",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al manipular la pértiga de escopeta (Shotgun) para retirar un conector de línea viva (perico), el liniero debe mantener la pértiga en qué condiciones de limpieza:",
+                a: ["Ligeramente engrasada con aceite de transformador", "Completamente limpia, seca y encerada con siliconas especiales repelentes a la humedad para evitar corrientes de fuga superficiales", "Húmeda para evitar estática", "Pintada con esmalte común"],
+                c: 1,
+                hint: "La suciedad crea caminos conductores sobre la superficie plástica de la pértiga.",
+                exp: "Las pértigas de fibra de vidrio requieren mantenimiento periódico con ceras dieléctricas hidrofóbicas para mantener intacto su coeficiente de aislamiento.",
+                search: "Mantenimiento y limpieza de pertigas dielectricas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "En el montaje de herrajes de un transformador bifásico de distribución, la conexión del neutro del tanque a la malla general de tierra tiene como fin primordial:",
+                a: ["Garantizar que el breaker no se dispare por sobrecarga", "Fijar el potencial de referencia a cero voltios y canalizar corrientes de cortocircuito o descargas atmosféricas protegiendo la red de BT", "Aumentar el voltaje de salida", "Disminuir el zumbido magnético de las láminas del núcleo"],
+                c: 1,
+                hint: "Estabiliza el centro de la estrella o el punto medio del secundario.",
+                exp: "Poner a tierra el neutro estabiliza los voltajes de servicio y asegura la rápida operación de las protecciones ante fallas de aislamiento.",
+                search: "Importancia de la puesta a tierra del neutro del transformador",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El dispositivo automático de protección instalado en las redes de MT capaz de detectar sobrecorrientes temporales, abrir el circuito y volver a cerrarlo de forma automática varias veces antes de bloquearse en apertura definitiva se denomina:",
+                a: ["Fusible de expulsión", "Reconectador automático (Recloser)", "Interruptor termomagnético común", "Seccionador de operación bajo carga"],
+                c: 1,
+                hint: "Despeja más del 80% de las fallas transitorias (como ramas secas rozando la red).",
+                exp: "El reconectador evita apagones prolongados al limpiar fallas transitorias mediante ciclos rápidos de apertura y cierre programados.",
+                search: "Reconectador de media tension recloser distribucion",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "Al realizar el tensado mecánico de conductores ACSR en una línea aérea de media tensión, el instrumento mecánico indicador de aguja acoplado al polipasto de cadena usado para medir los kilonewtons o libras de fuerza ejercidos es:",
+                a: ["Flexómetro de tensión", "Dinamómetro de tracción de línea", "Micrómetro de torque", "Manómetro hidráulico"],
+                c: 1,
+                hint: "Evita sobrepasar la tensión de diseño mecánico de la tabla de tendido.",
+                exp: "El dinamómetro es mandatorio para dejar los conductores con la catenaria y flecha exactas especificadas por el plano de ingeniería.",
+                search: "Dinamometro de tracción para tendido de lineas",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "Si se detecta un herraje de suspensión polimérico con signos evidentes de 'Tracking' o descargas parciales superficiales (caminos carbonizados), la acción inmediata debe ser:",
+                a: ["Limpiarlo con agua jabonosa y dejarlo operando", "Programar su reemplazo inmediato ya que el canal de carbón destruye las propiedades dieléctricas exponiendo la red a un fallo a tierra", "Pintarlo con laca aislante encima", "Ignorarlo si la línea no se ha disparado"],
+                c: 1,
+                hint: "El carbón es conductor y terminará por perforar completamente el núcleo del aislador.",
+                exp: "El tracking eléctrico es un daño irreversible en polímeros que genera corrientes de fuga crecientes hasta consolidar un cortocircuito sólido.",
+                search: "Tracking electrico en aisladores polimericos",
+                cat: "Herrajes"
+            },
+            {
+                q: "El herraje de fijación mecánica que consiste en una barra cilíndrica de acero galvanizado roscada en ambos extremos, que atraviesa de lado a lado el fuste del poste para sujetar las crucetas dobles, se denomina:",
+                a: ["Espigo de tope", "Perno doble espárrago (Double Arming Bolt)", "Tirante angular", "Perno coche"],
+                c: 1,
+                hint: "Usa cuatro tuercas y cuatro arandelas cuadradas para el apriete de sándwich.",
+                exp: "Los pernos de doble espárrago unen y alinean estructuras de crucetas gemelas en postes de retención o ángulos de paso.",
+                search: "Perno doble esparrago arming bolt",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Cuál es el riesgo de seguridad principal al intervenir una línea de distribución primaria desenergizada que corre paralela y muy cercana a otra línea de alta tensión viva de 230 kV?",
+                a: ["Pérdida de la señal de radio de la cuadrilla", "Riesgo de electrocución por acoplamiento inductivo y capacitivo (voltaje inducido peligroso) presente en la línea apagada", "Aumento excesivo de la temperatura del aire", "Fallas en la ponchadora hidráulica"],
+                c: 1,
+                hint: "El campo electromagnético de la línea viva transfiere energía en el aire al cable apagado.",
+                exp: "Las líneas muertas paralelas a circuitos de alta tensión se comportan como condensadores; requieren puesta a tierra continua para drenar la inducción.",
+                search: "Voltajes inducidos por acoplamiento electromagnetico lineas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué herraje accesorio en forma de ranura arqueada de fundición maleable se coloca dentro del lazo del cable de retenida de acero para evitar que este se doble con un radio de curvatura muy cerrado que quiebre sus hilos?",
+                a: ["Guardacabo (Thimble)", "Mordaza preformada de retenida", "Arandela curva de presión", "Eslabón de anclaje"],
+                c: 0,
+                hint: "Mantiene la forma ovalada del ojo del cable de acero trenzado.",
+                exp: "El guardacabo protege el cable de acero galvanizado contra la fatiga por doblado severo en los puntos de sujeción al perno ojo del anclaje.",
+                search: "Guardacabo para cable de acero galvanizado herraje",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar maniobras de mantenimiento de cambio de herrajes en una estructura tipo 'H' trifásica, ¿qué elemento se utiliza para desviar temporalmente el paso de corriente de una fase sin suspender el servicio?",
+                a: ["Un puente o bypass provisional con cable aislado flexible de alta tensión y grapas de operación en caliente", "Una soga de cáñamo común", "Una barra de cobre desnuda sostenida con la mano", "Un cable coaxial apantallado"],
+                c: 0,
+                hint: "Permite puentear el punto de corte antes de retirar físicamente las uniones rígidas.",
+                exp: "Los puentes provisionales LST transportan la corriente de forma segura alrededor de la zona de trabajo aislada para dar continuidad comercial.",
+                search: "Puentes de derivacion provisionales lineas vivas",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "De acuerdo con el estándar técnico, ¿cuál es el porcentaje máximo de pérdida de sección de hilos por rotura en un conductor ACSR que permite repararlo mediante varillas de armar en lugar de cortar y meter un manguito de empalme?",
+                a: ["Menor al 5% de los hilos de aluminio únicamente", "Menor al 15% de los hilos de aluminio de la capa externa, sin daño en el núcleo de acero de refuerzo", "Hasta el 50% de los hilos totales", "Cualquier daño se puede reparar con varillas"],
+                c: 1,
+                hint: "Si el alma de acero central o la mayoría de los hilos de aluminio sufren daños, la resistencia mecánica colapsará.",
+                exp: "Las varillas de armar restituyen mecánicamente y eléctricamente fallas superficiales leves. Daños mayores al 15% requieren corte y empalme estructural completo.",
+                search: "Criterios de reparacion de conductores acsr dañados",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "¿Qué tipo de herraje se atornilla al canal de la cruceta para sostener verticalmente el aislador de pasador o pin de porcelana?",
+                a: ["Perno espiga para cruceta (Pin Herraje)", "Abrazadera de remate", "Grillete plano", "Perno pasante largo"],
+                c: 0,
+                hint: "Tiene una cabeza roscada de plomo o nylon donde enrosca internamente el aislador.",
+                exp: "El perno espiga de cruceta proporciona la base estructural rígida y roscada que ancla el aislador pin a los perfiles de acero o madera.",
+                search: "Perno espiga para aislador de porcelana",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al trabajar en postes de madera tratada en el área rural de Guatemala o Colombia, el liniero debe inspeccionar la base del poste antes de subir golpeándola levemente con un martillo para:",
+                a: ["Despertar a las abejas o avispas ocultas", "Detectar por el sonido hueco o blando la existencia de pudrición interna, hongos o termitas que comprometan la estabilidad del poste", "Alinear las tuercas inferiores de fijación", "Verificar si el poste está bien hincado en la roca"],
+                c: 1,
+                hint: "Un sonido firme y seco indica madera densa y sana; un sonido sordo delata debilidad estructural.",
+                exp: "La inspección visual y sonora por golpeo en la base del poste de madera es vital para prevenir accidentes por el colapso del fuste durante el ascenso.",
+                search: "Inspeccion de postes de madera por golpeo sonido",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Cuál es el calibre normalizado típico del alambre de aleación de aluminio suave utilizado para amarrar de forma rígida el conductor ACSR a la garganta superior del aislador de pin?",
+                a: ["#4 AWG o #6 AWG de aluminio recocido", "#14 AWG de cobre aislado", "#22 AWG de acero dulce flexible", "Alambre de púas galvanizado"],
+                c: 0,
+                hint: "Debe ser del mismo material del conductor para evitar corrosión galvánica y lo suficientemente flexible para entorchar a mano.",
+                exp: "El amarre se ejecuta con alambre de aluminio recocido desnudo calibre #4 o #6 AWG para garantizar firmeza sin morder o estrangular al conductor principal.",
+                search: "Amarre de conductor a aislador pin aluminio recocido",
+                cat: "Herrajes"
+            },
+            {
+                q: "El fenómeno de 'Efecto Corona' en líneas aéreas primarias de media tensión, caracterizado por un zumbido siseante y un brillo azulado nocturno, es causado principalmente por:",
+                a: ["Exceso de pájaros volando en los cables", "La ionización del aire circundante al conductor cuando el gradiente eléctrico supera la rigidez dieléctrica del aire (por bordes filosos o suciedad)", "Falta de apriete en los conectores de las crucetas", "Cortocircuito monofásico directo en el transformador"],
+                c: 1,
+                hint: "Se intensifica con altos niveles de humedad ambiental, lluvia, niebla o acumulación de polución salina.",
+                exp: "El efecto corona representa pérdidas eléctricas menores y degradación local del aire debido a campos eléctricos intensos concentrados en puntos agudos del contorno.",
+                search: "Efecto corona en lineas de distribucion electrica",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "Para realizar la apertura segura con carga de un cortacircuitos ordinario utilizando una pértiga universal estándar, es mandatorio acoplar en la punta de la pértiga la herramienta de extinción de arco conocida comercialmente como:",
+                a: ["Ponchadora mecánica", "Loadbuster (Herramienta abre-carga portátil)", "Grapa perico universal", "Cuchilla rompe-arcos fija"],
+                c: 1,
+                hint: "Contiene una cámara interna de ruptura que confina y extingue el arco eléctrico de forma controlada.",
+                exp: "El Loadbuster absorbe la chispa eléctrica internamente abriendo el circuito sin peligro de destellos ni fogonazos exteriores para el liniero.",
+                search: "Herramienta abre carga portatil loadbuster s&c",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje compuesto por varillas de aleación de aluminio preformadas que se enrolla alrededor del conductor en los extremos finales de línea para formar un lazo de retención sin usar pernos de apriete se denomina:",
+                a: ["Grapa de pistola atornillada", "Remate preformado de distribución (Dead-end Preformed)", "Manguito deslizante", "Cinta de amarre corrugada"],
+                c: 1,
+                hint: "Utiliza el principio de fricción uniforme distribuida a lo largo de las espirales mecánicas.",
+                exp: "Los remates preformados se autoajustan de manera proporcional a la tensión mecánica de la línea de media tensión sin dañar la superficie externa.",
+                search: "Remate preformado de distribucion media tension",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Qué tipo de estructura de poste se debe construir cuando la línea de media tensión cambia de dirección con un ángulo de deflexión horizontal mayor a 60 grados?",
+                a: ["Estructura tangente de paso simple", "Estructura de ángulo de doble retención o amarre terminal con puestas a tierra independientes", "Poste tangente con cruceta de madera corta", "Estructura de suspensión flotante ligera"],
+                c: 1,
+                hint: "El poste absorberá fuerzas colosales resultantes del cambio brusco de vector mecánico.",
+                exp: "Ángulos mayores a 60 grados se manejan mecánicamente como dos remates de fin de línea independientes espalda con espalda unidos por puentes flotantes.",
+                search: "Estructuras de doble retencion para angulos severos",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "Antes de subir a una canasta aislada (camión grúa balde/Bucket Truck) para trabajar en redes energizadas con el método a distancia, ¿qué prueba diaria de seguridad se le realiza al brazo mecánico del camión?",
+                a: ["Verificación del velocímetro del camión", "Prueba visual de limpieza y purga hidráulica para comprobar el aislamiento dieléctrico del tramo de fibra de vidrio aislante", "Pintar los pasadores mecánicos", "Medir la presión de las llantas traseras"],
+                c: 1,
+                hint: "Cualquier película de agua o grasa interna anularía el aislamiento del brazo telescópico.",
+                exp: "El tramo aislante del camión canasta se limpia concienzudamente para evitar fugas de corriente desde la canasta hacia el chasis del vehículo.",
+                search: "Mantenimiento brazo aislado camion canasta bucket truck",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "El herraje plano de acero en forma de escuadra de 90 grados perforado en los extremos, utilizado para dar soporte diagonal y rigidez estructural a la cruceta frente al poste, se llama:",
+                a: ["Pie de amigo o tirante angular de cruceta (Crossarm Brace)", "Abrazadera en U", "Placa de asiento de poste", "Perno coche pasante"],
+                c: 0,
+                hint: "Forma un triángulo rígido estabilizador abajo de la cruceta.",
+                exp: "Los pies de amigo estabilizan mecánicamente la cruceta evitando el balanceo o desalineamiento provocado por el tendido de las fases.",
+                search: "Pie de amigo herraje electrico tirante cruceta",
+                cat: "Herrajes"
+            },
+            {
+                q: "De acuerdo con el código de seguridad eléctrica, si se encuentra un conductor de media tensión energizado tirado en el suelo, la cuadrilla en tierra debe establecer una zona de exclusión de paso a una distancia mínima en radio de:",
+                a: ["2 metros", "5 metros", "10 metros o superior debido al peligro de voltaje de paso y de contacto en gradiente", "0.5 metros"],
+                c: 2,
+                hint: "La corriente se disipa en círculos concéntricos en la tierra creando diferencias de voltaje peligrosas al caminar.",
+                exp: "La caída de una fase viva carga el suelo; aproximarse genera una diferencia de potencial entre las piernas del técnico (voltaje de paso) mortal.",
+                search: "Tension de paso y contacto conductor en el suelo",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué tipo de conector se debe utilizar para empalmar mecánicamente la bajante de aluminio trenzado de la línea con los terminales de cobre de los bornes de alta tensión de un transformador?",
+                a: ["Conector de ranura paralela de aluminio simple", "Conector bimetálico de ojo de compresión hermético cargado con grasa inhibidora (Pentrox o similar)", "Entorchar el cable de cobre directo sobre el espárrago de aluminio", "Tuerca de latón simple"],
+                c: 1,
+                hint: "La grasa previene la penetración de oxígeno y humedad en la junta de dos metales disímiles.",
+                exp: "La junta Al-Cu requiere conectores bimetálicos especializados con compuesto inhibidor para evitar fallas por falsa conexión debidas a la oxidación galvánica.",
+                search: "Conectores bimetalicos de ojo grasa inhibidora pentrox",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar el cálculo de cargas mecánicas para una retención, ¿qué componente del herraje de anclaje empotrado en el suelo se encarga de acoplar la varilla de la retenida con el cable de acero trenzado superior?",
+                a: ["El bloque de anclaje de concreto (muerto)", "La camisa protectora de plástico amarilla", "La mordaza o prensa para retenida con guardacabo integrado", "La grapa de suspensión"],
+                c: 2,
+                hint: "Sujeta fuertemente la gaza final del cable tensado de acero.",
+                exp: "Las mordazas de retenida aseguran la tensión del cable que transfiere los esfuerzos de flexión del poste de media tensión hacia la cimentación.",
+                search: "Mordazas de sujecion para retenidas electricas herrajes",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "¿Cuál es la función técnica primordial de un pararrayos de óxido de zinc (Descargador de sobretensiones) instalado inmediatamente antes de los bornes de un transformador?",
+                a: ["Mejorar la regulación de voltaje secundaria", "Ofrecer un camino de muy baja impedancia a tierra para desviar las corrientes de sobretensión atmosférica parando el arco interno del equipo", "Cortar el paso de corriente ante sobrecargas severas", "Aislar físicamente las fases primarias"],
+                c: 1,
+                hint: "Su resistencia óhmica disminuye drásticamente a casi cero ante picos instantáneos de alto voltaje.",
+                exp: "El pararrayos protege el aislamiento del bobinado interno del transformador drenando la sobretensión producida por rayos a tierra.",
+                search: "Pararrayos de oxido de zinc funcionamiento distribucion",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje largo de acero galvanizado con rosca en un extremo y un ojo alargado en el otro, que se empotra atravesando el poste para enganchar las cadenas de aisladores de suspensión en estructuras de remate, es el:",
+                a: ["Perno ojo recto (Eye Bolt)", "Espárrago liso", "Tirante de anclaje angular", "Abrazadera ajustable"],
+                c: 0,
+                hint: "El ojo del perno sirve como punto de anclaje directo para el grillete o aislador.",
+                exp: "El perno ojo recto transmite la fuerza horizontal total de tracción de la línea hacia la estructura de concreto o madera del poste.",
+                search: "Perno ojo recto acero galvanizado distribucion",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al ejecutar trabajos en redes aéreas compactas de media tensión con cables ecológicos protegidos (semi-aislados), el liniero debe recordar operativamente que el aislamiento exterior del cable:",
+                a: ["Es 100% seguro al tacto directo con la mano desnuda de por vida", "No es una pantalla dieléctrica de seguridad plena; debe tratarse con las mismas distancias de seguridad y guantes aislantes que un conductor desnudo", "Es puramente decorativo para camuflar el cable en la vegetación", "Permite apoyar el cuerpo del liniero encima sin problemas"],
+                c: 1,
+                hint: "La cubierta de polietileno reticulado (XLPE) reduce fallas por ramas, pero no garantiza seguridad total contra descargas al operario.",
+                exp: "Los cables ecológicos o protegidos reducen cortocircuitos transitorios pero carecen de blindaje a tierra; operativamente se manejan como líneas desnudas.",
+                search: "Cables ecologicos protegidos media tension seguridad",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué tipo de aislador, de geometría cilíndrica alargada con faldas de hule silicón y herrajes tipo ojo-clevis en los extremos, ha reemplazado ampliamente a las pesadas cadenas de discos de porcelana en las redes modernas de MT?",
+                a: ["Aislador de carrete de porcelana", "Aislador polimérico de suspensión (tipo line post o tensor)", "Aislador pin de vidrio templado", "Aislador de resina epóxica para barra colectora"],
+                c: 1,
+                hint: "Son ligeros, altamente hidrofóbicos y resistentes al vandalismo por piedras.",
+                exp: "Los aisladores poliméricos de suspensión ofrecen un rendimiento dieléctrico superior en ambientes contaminados con una fracción del peso de la porcelana.",
+                search: "Aislador polimerico de suspension media tension",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar la conexión de una nueva subestación de distribución aérea, ¿cuál es el propósito de realizar el puenteo o conexión equipotencial de todos los herrajes metálicos del poste a la bajante de tierra?",
+                a: ["Mejorar la conductividad de las fases vivas", "Evitar la aparición de tensiones de contacto e inducciones peligrosas en las partes metálicas no conductoras expuestas al personal", "Hacer que el poste sea más resistente a sismos", "Aumentar el factor de carga de los equipos"],
+                c: 1,
+                hint: "Busca que todo elemento metálico accesible esté estrictamente al mismo potencial cero del suelo.",
+                exp: "La conexión equipotencial de herrajes asegura la rápida operación de las protecciones ante fallas de aislamiento y protege contra voltajes inducidos.",
+                search: "Conexion equipotencial de herrajes en postes electricos",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "El herraje especial en forma de gancho curvo de acero galvanizado con rosca para madera o tuerca pasante, utilizado para fijar los tensores de acometidas de baja tensión o hilos neutrales al poste, se denomina:",
+                a: ["Perno gancho (Hook Bolt)", "Abrazadera omega", "Grapa de ranura hendida", "Manguito de fijación"],
+                c: 0,
+                hint: "Permite enganchar de forma rápida la gaza del tensor preformado del cable neutro.",
+                exp: "El perno gancho es el elemento estandarizado para sostener los esfuerzos mecánicos de cables secundarios y de acometida en postes de distribución.",
+                search: "Perno gancho para postes herraje electrico",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al abrir un circuito primario de media tensión con carga usando un interruptor bajo carga con aislamiento en gas SF6 (Hexafluoruro de Azufre), las ventajas técnicas de este gas radican en:",
+                a: ["Es un excelente conductor de calor y electricidad residual", "Su altísima capacidad dieléctrica y propiedad extintora de arcos que minimiza el desgaste de los contactos internos", "Ser un gas completamente inflamable que quema los residuos de carbón", "Su bajo costo comparado con el aire comprimido"],
+                c: 1,
+                hint: "Es un gas pesado, altamente estable y electronegativo que captura electrones libres del arco eléctrico.",
+                exp: "El gas SF6 permite diseñar interruptores y reconectadores compactos y herméticos libres de mantenimiento frecuente gracias a sus propiedades extintoras.",
+                search: "Gas hexafluoruro de azufre sf6 en interruptores electricos",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje de fundición de hierro galvanizado que se prensa mecánicamente a la base del poste de madera para acoplar la varilla de anclaje de la retenida enterrada en el suelo se llama:",
+                a: ["Grapa de anclaje para retenida (Guy Clamp)", "Abrazadera de tres pernos", "Perno pasante plano", "Arandela de presión cóncava"],
+                c: 0,
+                hint: "Cuenta con dos canales paralelos para sujetar los dos tramos de cable de acero entrelazados.",
+                exp: "Las grapas de tres pernos para retenida fijan firmemente el cable de acero trenzado manteniendo el tensado estructural de postes en curvas.",
+                search: "Grapa de tres pernos para retenida herraje",
+                cat: "Herrajes"
+            },
+            {
+                q: "Cuando una cuadrilla de linieros realiza el cambio de un poste dañado por un accidente de tránsito, ¿cuál es el peligro eléctrico oculto en el suelo antes de hincar el nuevo poste en la misma excavación?",
+                a: ["Presencia de campos magnéticos permanentes en el lodo", "Riesgo de perforación de ductos subterráneos de redes de media o baja tensión adyacentes no mapeadas (contacto eléctrico en suelo)", "Pérdida de la resistencia del concreto por la humedad de la tierra", "Generación de estática por fricción de palas"],
+                c: 1,
+                hint: "Exige consultar planos de interferencias subterráneas y usar herramientas con aislamiento en mangos.",
+                exp: "Excavar en zonas urbanas densas presenta riesgos elevados de golpear canalizaciones subterráneas vivas, causando cortocircuitos severos a nivel de suelo.",
+                search: "Seguridad en excavaciones electricas redes subterraneas",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué herraje rígido de acero con perfil en canal 'U' se coloca verticalmente adosado al fuste del poste para proteger mecánicamente los cables de bajada de media tensión aislados (XLPE) hacia redes subterráneas?",
+                a: ["Ducto galvanizado o canaleta de protección de bajantes (U-Guard)", "Tubo de PVC flexible", "Placa de asiento de cruceta", "Abrazadera ajustable"],
+                c: 0,
+                hint: "Cubre los cables desde una altura de 2.5 metros del suelo hasta la base del poste contra impactos vehiculares o vandalismo.",
+                exp: "Las canaletas de protección en 'U' (U-Guards) resguardan los cables de potencia aislados contra agresiones mecánicas en zonas públicas transitadas.",
+                search: "Canaleta de proteccion en u bajantes de postes u guard",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar la medición de la resistencia de la puesta a tierra de un poste de media tensión empleando un telurómetro digital, el valor de resistencia óhmica óptimo recomendado por el RETIE y normas internacionales para la protección contra rayos debe ser:",
+                a: ["Mayor a 500 Ohmios", "Menor o igual a 10 Ohmios en sistemas de distribución y subestaciones", "Exactamente 100 Ohmios en cualquier terreno", "Cero Ohmios absolutos en toda circunstancia"],
+                c: 1,
+                hint: "Un valor bajo asegura que la energía de la descarga atmosférica fluya al suelo sin elevar peligrosamente el voltaje del poste.",
+                exp: "Se busca mantener la resistencia de tierra por debajo de los 10 Ohmios para garantizar la efectividad de los pararrayos y protecciones de la red.",
+                search: "Valor maximo de resistencia de puesta a tierra RETIE",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "El herraje roscado largo de extremo en curva abierta que se coloca en la cruceta para guiar e impedir que los conductores de fase se deslicen lateralmente fuera de la estructura durante maniobras de tendido se denomina:",
+                a: ["Perno pin de polea", "Perno de gancho de suspensión de tendido", "Espárrago de ajuste doble", "Pasador de chaveta"],
+                c: 1,
+                hint: "Sostiene temporalmente los rodillos o poleas de tendido mecánico.",
+                exp: "Los pernos de gancho de tendido facilitan el montaje seguro y controlado de conductores primarios sin raspar el metal contra los cantos vivos de la cruceta.",
+                search: "Perno gancho de tendido de lineas de distribucion",
+                cat: "Herrajes"
+            },
+            {
+                q: "¿Cuál es el procedimiento técnico mandatorio antes de abrir el circuito secundario de un Transformador de Corriente (TC) de medición conectado en una línea de media tensión energizada?",
+                a: ["Dejarlo abierto sin conectar nada", "Cortocircuitar sólidamente los bornes del secundario del TC antes de retirar la carga o el medidor para evitar sobrevoltajes inducidos letales", "Llenarlo de aceite aislante adicional", "Desconectar la varilla de tierra general"],
+                c: 1,
+                hint: "Un TC abierto con primario energizado induce voltajes de miles de voltios en su secundario que destruyen el aislamiento e inducen arcos.",
+                exp: "Los TC operan con flujo balanceado; abrir su circuito secundario satura el núcleo de hierro provocando picos de voltaje mortales en los bornes abiertos.",
+                search: "Por que cortocircuitar el secundario de un transformador de corriente",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje plano perforado con esquinas redondeadas que se interpone entre la tuerca del perno pasante y la superficie del poste de madera o concreto para distribuir la presión de apriete evitando desgarros es la:",
+                a: ["Arandela de presión cuadrada plana o curva de servicio pesado", "Contratuerca de seguridad", "Placa de marca de poste", "Abrazadera de una vía"],
+                c: 0,
+                hint: "Aumenta la superficie de contacto del torque mecánico aplicado.",
+                exp: "Las arandelas cuadradas de distribución (típicamente de 2x2 o 3x3 pulgadas) son vitales para evitar la penetración y daño del perno en el cuerpo del poste.",
+                search: "Arandela cuadrada galvanizada herraje electrico",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar trabajos bajo lluvia intensa o tormentas eléctricas en líneas aéreas de media tensión, la regla operativa de seguridad absoluta para la cuadrilla dicta:",
+                a: ["Trabajar con impermeables plásticos comunes arriba del poste", "Suspender de manera inmediata todas las labores en altura y líneas aéreas debido al riesgo inminente de descargas atmosféricas directas o fallas por pérdida de aislamiento en pértigas", "Continuar solo si el circuito es de bajo amperaje", "Subir al poste pero mantenerse atado sin tocar los cables"],
+                c: 1,
+                hint: "El agua líquida forma caminos continuos conductores de electricidad sobre el equipo aislante y herramientas.",
+                exp: "El riesgo de tormentas eléctricas y humedad extrema invalida las condiciones dieléctricas seguras de operación; se impone la evacuación y resguardo del personal.",
+                search: "Suspension de trabajos electricos por condiciones climaticas lluvia",
+                cat: "Seguridad Crítica"
+            },
+            {
+                q: "¿Qué tipo de grasa o pasta técnica lubricante de alta conductividad e inhibidora de corrosión debe aplicarse obligatoriamente en el interior de los conectores mecánicos de aluminio antes de prensarlos al conductor?",
+                a: ["Grasa de litio automotriz común", "Pasta inhibidora de óxido cargada con partículas de zinc conductoras (tipo Alnox o Pentrox)", "Vaselina sólida farmacéutica", "Grasa de grafito para alta temperatura"],
+                c: 1,
+                hint: "Rompe mecánicamente la delgada película aislante de óxido de aluminio formada en la superficie del cable.",
+                exp: "Las pastas como el Pentrox sellan herméticamente la conexión contra la entrada de aire y humedad, manteniendo baja la resistencia de contacto eléctrico.",
+                search: "Pasta inhibidora de oxido alnox pentrox aluminio",
+                cat: "Herrajes"
+            },
+            {
+                q: "El herraje tensor mecánico compuesto por un cuerpo central roscado con un tornillo de ojo en un extremo y un tornillo de gancho en el otro, usado para regular con precisión la tensión mecánica de los cables de retenida de postes, es el:",
+                a: ["Tensor de tornillo o torniquete de forja (Turnbuckle)", "Grillete articulado", "Perno doble espárrago", "Abrazadera de tres vías"],
+                c: 0,
+                hint: "Al girar el cuerpo central en un sentido, ambos tornillos se aproximan aumentando el tiro mecánico.",
+                exp: "Los tensores de tornillo (Turnbuckles) permiten corregir asentamientos o desplomes de los postes ajustando la tensión final del cable de viento.",
+                search: "Tensor de tornillo ojo gancho turnbuckle herraje",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al operar un reconectador automático (Recloser) en modo manual en campo para pruebas en el circuito, la función primordial del botón o palanca etiquetada como 'No Reclose' (Bloqueo de reconexión) es:",
+                a: ["Apagar las pantallas digitales de medición", "Inhibir los ciclos de cierre automático ante una falla, haciendo que el equipo abra de forma definitiva al primer disparo para proteger a la cuadrilla aguas abajo", "Aumentar la sensibilidad de la corriente de neutro", "Cancelar la comunicación de radio con despacho"],
+                c: 1,
+                hint: "Es una condición obligatoria de seguridad cuando hay linieros interviniendo la línea de distribución de forma viva o en proximidad.",
+                exp: "Activar el 'No Reclose' evita que el equipo intente energizar automáticamente el circuito si ocurre una falla por contacto accidental del personal de obra.",
+                search: "Funcion no reclose reconectador seguridad linieros",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "¿Qué tipo de estructura normalizada se construye cuando una línea de distribución trifásica termina de forma absoluta y los conductores deben rematarse de forma fija en el último poste?",
+                a: ["Estructura tangente de paso simple", "Estructura de fin de línea o remate terminal de tres fases (tipo H3 o equivalente de amarre)", "Estructura de paso en ángulo ligero", "Poste de derivación simple con cortacircuitos abiertos"],
+                c: 1,
+                hint: "Absorbe la totalidad del tiro mecánico longitudinal de los conductores desnudos provenientes del vano anterior.",
+                exp: "Las estructuras de fin de línea soportan las fuerzas horizontales plenas de los conductores utilizando aisladores de suspensión y robustas retenciones a tierra.",
+                search: "Estructura de fin de linea de distribucion trifasica",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje accesorio cilíndrico de material plástico PVC de alta visibilidad (generalmente amarillo) que se coloca envolviendo el cable de acero de las retenidas a la altura del suelo sirve para:",
+                a: ["Evitar que los perros muerdan el cable de acero", "Servir como protector y señalizador visual de advertencia para evitar colisiones de peatones o vehículos contra el cable de retenida", "Aumentar el aislamiento eléctrico de la tierra", "Sujetar el cable de guarda superior"],
+                c: 1,
+                hint: "Es un elemento de seguridad vial y peatonal pasivo mandatorio en zonas urbanas y rurales.",
+                exp: "Las camisas protectoras amarillas de retenida incrementan la visibilidad diurna y nocturna del cable de acero inclinado, mitigando accidentes de terceros.",
+                search: "Protector de retenida amarillo plastico señalizacion",
+                cat: "Herrajes"
+            },
+            {
+                q: "Para limpiar la contaminación salina, polvo industrial o lodos acumulados en las faldas de los aisladores de porcelana de una subestación de media tensión sin desenergizar la planta, se debe emplear:",
+                a: ["Chorro de agua común de manguera de jardín a baja presión", "Lavado con agua desmineralizada a alta presión con camiones especializados y pértigas puestas a tierra con operarios entrenados en LST", "Limpieza manual con trapos húmedos de algodón con la mano desnuda", "Pintar los aisladores con aceite dieléctrico nuevo encima"],
+                c: 1,
+                hint: "El agua pura desmineralizada tiene una conductividad eléctrica extremadamente baja (cercana a cero) lo que evita arcos eléctricos en el chorro.",
+                exp: "El lavado en caliente con agua desmineralizada requiere un estricto control de la presión del chorro y la conductividad del agua para garantizar la vida de los técnicos.",
+                search: "Lavado de aisladores en vivo agua desmineralizada",
+                cat: "Maniobras de Red"
+            },
+            {
+                q: "El herraje metálico de sujeción que consta de un perno largo doblado en forma de letra 'U' con roscas en ambos extremos, usado para sujetar los aisladores tipo Line Post o crucetas a la estructura del poste, es el:",
+                a: ["Perno en U (U-Bolt)", "Perno de ojo partido", "Abrazadera de una pieza", "Eslabón de bola plano"],
+                c: 0,
+                hint: "Abraza perfiles metálicos angulares o el contorno cuadrado de postes de concreto.",
+                exp: "Los pernos en 'U' proporcionan una fijación mecánica de alta resistencia al torque para soportar herrajes pesados de distribución.",
+                search: "Perno en u u bolt herraje electrico",
+                cat: "Herrajes"
+            },
+            {
+                q: "Al realizar el cálculo de la corriente nominal de carga en el lado de alta tensión ($13.2\text{ kV}$) de un transformador trifásico de distribución de $75\text{ kVA}$, el valor de corriente de línea aproximado es:",
+                a: ["1.5 Amperios", "3.28 Amperios", "15.5 Amperios", "100 Amperios"],
+                c: 1,
+                hint: "Utilice la fórmula de potencia trifásica: $I = S / (\sqrt{3} \cdot V)$. Donde $S = 75000\text{ VA}$ y $V = 13200\text{ V}$.",
+                exp: "Aplicando la fórmula: $75000 / (1.732 \cdot 13200) = 75000 / 22862.4 = 3.28\text{ Amperios}$. Es una corriente pequeña en alta tensión.",
+                search: "Calculo de corriente nominal en transformadores trifasicos",
+                cat: "Cálculos de Campo"
+            },
+            {
+                q: "¿Qué tipo de herraje terminal de aleación de bronce o aluminio se utiliza para conectar mecánicamente de forma fija la salida de los cables de potencia aislados subterráneos con las redes aéreas desnudas de MT?",
+                a: ["Manguito de empalme recto", "Terminal exterior premoldeada de contracción en frío o calor (Botas terminales/Calaveras)", "Conector de ranura hendida simple", "Grapa tipo perno en U"],
+                c: 1,
+                hint: "Controla los esfuerzos del campo eléctrico en el corte de la pantalla semiconductora del cable aislado.",
+                exp: "Las terminales exteriores (Calaveras) evitan fallas por arqueo en las transiciones aero-subterráneas sellando el cable contra la humedad ambiental.",
+                search: "Terminal exterior premoldeada media tension calavera",
+                cat: "Herrajes"
             }
         ];
-
-        // Relleno automático inteligente para completar las 60 preguntas requeridas manteniendo consistencia técnica
-        const areas = ["Seguridad Operativa", "Cálculos de Campo", "Maniobras de Red", "Herrajes Críticos"];
-        const terminologia = [
-            { t: "Uso de cortacircuitos (Fuso)", d: "Aislamiento y protección ante fallas por sobrecorriente.", s: "Cortacircuitos fusibles media tension" },
-            { t: "Pararrayos de óxido de zinc", d: "Drenar sobretensiones atmosféricas originadas por descargas directas.", s: "Descargadores de sobretensiones pararrayos distribucion" },
-            { t: "Uso de mantas y cubiertas aislantes (mangueras)", d: "Aislar los conductores energizados adyacentes al punto de maniobra a contacto.", s: "Mantas aislantes dieléctricas media tension" },
-            { t: "Análisis de Trabajo Seguro (ATS/AST)", d: "Identificar los peligros del entorno en el suelo antes de iniciar cualquier ascenso.", s: "AST sector electrico prevencion de riesgos" },
-            { t: "Guantes dieléctricos Clase 2", d: "Soportar una tensión máxima de utilización en corriente alterna de hasta 17,000 Voltios.", s: "Guantes dielectricos clase 2 ficha tecnica" }
-        ];
-
-        while(questions.length < 60) {
-            let id = questions.length + 1;
-            let area = areas[id % areas.length];
-            let term = terminologia[id % terminologia.length];
-            questions.push({
-                q: `[Ítem Técnico de ${area}] ¿Cuál es la finalidad u objetivo directo del siguiente procedimiento operativo estándar en redes aéreas: "${term.t}"?`,
-                a: [term.d, "Estetizar mecánicamente la postería urbana", "Sustituir el uso de la pértiga dieléctrica", "Facilitar la conducción monofásica de baja potencia"],
-                c: 0,
-                hint: "Se enfoca directamente en la salvaguarda de la vida del liniero o la protección de los transformadores.",
-                exp: `El procedimiento o elemento "${term.t}" tiene como función principal: ${term.d}`,
-                search: term.s,
-                cat: area
-            });
-        }
 
         let current = 0;
         let score = 0;
@@ -225,7 +898,7 @@
                 let optionsHTML = '';
                 q.a.forEach((opt, optIdx) => {
                     optionsHTML += `
-                        <button type="button" id="opt-${index}-${optIdx}" onclick="checkAnswer(${index}, ${optIdx})" class="w-full text-left p-3 my-2 border rounded-lg cursor-pointer hover:bg-blue-50 transition border-gray-200 bg-white block text-sm font-medium">
+                        <button type="button" id="opt-${index}-${optIdx}" onclick="checkAnswer(${index}, ${optIdx})" class="w-full text-left p-3 my-2 border rounded-lg cursor-pointer hover:bg-blue-50 transition border-gray-200 bg-white block text-sm font-medium text-gray-700">
                             ${opt}
                         </button>
                     `;
@@ -245,13 +918,13 @@
                     <!-- Zona de Ayuda/Sugerencia -->
                     <div class="mt-4 p-2 bg-yellow-50 rounded border border-yellow-200 text-xs text-yellow-900" id="hint-box-${index}">
                         <button type="button" onclick="showHint(${index})" class="underline font-bold text-yellow-700 hover:text-yellow-900">💡 ¿Necesitas una sugerencia técnica para esta pregunta?</button>
-                        <p id="hint-text-${index}" class="hidden mt-1 italic">${q.hint}</p>
+                        <p id="hint-text-${index}" class="hidden mt-1 italic text-gray-700">${q.hint}</p>
                     </div>
 
                     <!-- Módulo de Explicación Integrado -->
                     <div id="explanation-${index}" class="hidden mt-4 p-4 bg-emerald-50 rounded-lg border-2 border-emerald-400 text-xs text-emerald-900">
                         <p class="font-bold text-sm text-emerald-800 mb-1">📢 Explicación del Criterio Técnico:</p>
-                        <p class="mb-2">${q.exp}</p>
+                        <p class="mb-2 text-gray-800">${q.exp}</p>
                         <a href="https://www.google.com/search?q=${encodeURIComponent(q.search)}" target="_blank" class="inline-flex items-center font-bold text-blue-700 hover:underline bg-white px-2 py-1 rounded border shadow-sm">
                             🌐 Profundizar y buscar este término en Internet ↗
                         </a>
@@ -325,30 +998,30 @@
 
             let label = ""; let desc = ""; let style = "";
             
-            // Lógica exacta de rangos solicitados (Escalado para 60 preguntas)
+            // Distribución estricta de rangos sobre las 60 preguntas únicas
             if(score <= 15) {
                 label = "Liniero Aprendiz";
-                desc = "Requiere supervisión total en piso. Posee nociones elementales pero presenta vacíos críticos de seguridad y normativas.";
+                desc = "Nivel inicial en piso. Presenta vacíos conceptuales de alto riesgo en distancias de seguridad y normas de puesta a tierra. Debe operar bajo supervisión directa permanente.";
                 style = "bg-red-100 border-red-500 text-red-800";
-            } else if (score <= 25) {
+            } else if (score <= 28) {
                 label = "Liniero de Tercera";
-                desc = "Capaz de realizar montajes mecánicos básicos de herrajes en líneas desenergizadas bajo supervisión directa de la cuadrilla.";
+                desc = "Posee destrezas para montaje mecánico básico de herrajes en líneas aéreas desenergizadas, pero requiere reforzar normativas internacionales de seguridad.";
                 style = "bg-orange-100 border-orange-500 text-orange-800";
-            } else if (score <= 38) {
+            } else if (score <= 40) {
                 label = "Liniero de Segunda";
-                desc = "Conoce las distancias mínimas y operaciones estándar. Ejecuta maniobras normales con fluidez en media tensión.";
+                desc = "Buen desempeño técnico general. Capaz de realizar maniobras normales y armado de estructuras estándar de media tensión de forma segura.";
                 style = "bg-amber-100 border-amber-500 text-amber-800";
-            } else if (score <= 48) {
+            } else if (score <= 50) {
                 label = "Liniero de Primera";
-                desc = "Domina el trabajo en caliente (LST) por contacto o distancia, herrajes avanzados y reglamentos RETIE / CNEE de forma segura.";
+                desc = "Excelente nivel de competencia. Domina los trabajos en caliente con tensión (LST), uso riguroso de pértigas, cálculos de campo y los reglamentos CNEE y RETIE.";
                 style = "bg-blue-100 border-blue-500 text-blue-800";
-            } else if (score <= 56) {
+            } else if (score <= 57) {
                 label = "Jefe de Cuadrilla";
-                desc = "Competencia alta para liderazgo en sitio, apertura de circuitos, coordinación con despachos y gestión del AST/ATS.";
+                desc = "Capacidad de mando y alta pericia técnica en campo. Apto para liderar maniobras críticas de cortacircuitos, reconectadores y gestionar el Análisis de Trabajo Seguro (ATS).";
                 style = "bg-teal-100 border-teal-500 text-teal-800";
             } else {
-                label = "Supervisor / Inspector de Redes";
-                desc = "Nivel experto absoluto. Criterio regulatorio e institucional intachable para auditar seguridad y certificar infraestructuras.";
+                label = "Supervisor de Redes / Inspector";
+                desc = "Nivel experto absoluto. Criterio regulatorio e institucional intachable para auditar la seguridad de contratistas, certificar obras eléctricas de MT y dictar capacitaciones.";
                 style = "bg-green-100 border-green-500 text-green-800";
             }
 
