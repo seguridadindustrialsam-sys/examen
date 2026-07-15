@@ -1,1 +1,1480 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c1{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;text-align:left}.c3{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:24pt;color:#000000;font-weight:700;font-size:36pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:18pt;color:#666666;font-size:24pt;padding-bottom:4pt;font-family:"Georgia";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:24pt;color:#000000;font-weight:700;font-size:24pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-weight:700;font-size:18pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:14pt;color:#000000;font-weight:700;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:12pt;color:#000000;font-weight:700;font-size:12pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:11pt;color:#000000;font-weight:700;font-size:11pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:10pt;color:#000000;font-weight:700;font-size:10pt;padding-bottom:2pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c0"><span class="c1">&lt;!DOCTYPE html&gt;</span></p><p class="c0"><span class="c1">&lt;html lang=&quot;es&quot;&gt;</span></p><p class="c0"><span class="c1">&lt;head&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;title&gt;Examen T&eacute;cnico Profesional para Linieros de Media Tensi&oacute;n&lt;/title&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .question-card { display: none; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .question-card.active { display: block; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; .progress-bar { transition: width 0.3s ease; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body class=&quot;bg-slate-100 font-sans antialiased text-gray-900 p-4&quot;&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;div class=&quot;max-w-3xl mx-auto my-4&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Header --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;header class=&quot;bg-gradient-to-r from-blue-950 to-blue-800 text-white p-6 rounded-t-xl shadow-lg&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-2xl font-bold&quot;&gt;Evaluaci&oacute;n de Competencias: Liniero de Media Tensi&oacute;n&lt;/h1&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;mt-1 opacity-90 text-xs&quot;&gt;120 Preguntas de Contenido &Uacute;nico: T&eacute;cnicas, Herrajes Avanzados, CNEE (GT), RETIE (CO), Habilidades Blandas, Riesgo El&eacute;ctrico y Herramientas para TcT&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/header&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Progress --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white p-4 border-x border-gray-200 flex justify-between items-center text-xs font-semibold text-gray-600&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span id=&quot;progress-text&quot;&gt;Pregunta 1 de 120&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;w-1/2 bg-gray-200 rounded-full h-2&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;progress-bar&quot; class=&quot;bg-blue-600 h-2 rounded-full progress-bar&quot; style=&quot;width: 0.83%&quot;&gt;&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span id=&quot;percentage-text&quot;&gt;1%&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Quiz Container --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;quiz-container&quot; class=&quot;bg-white p-6 rounded-b-xl shadow-lg border-b border-x border-gray-200&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;questions-wrapper&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Se inyecta din&aacute;micamente mediante JS --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Botones de navegaci&oacute;n --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;mt-6 flex justify-between items-center border-t pt-4&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;button&quot; id=&quot;btn-prev&quot; onclick=&quot;move(-1)&quot; class=&quot;hidden px-4 py-2 bg-gray-400 text-white font-bold rounded hover:bg-gray-500 text-sm&quot;&gt;Anterior&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;action-feedback&quot; class=&quot;text-xs font-medium text-gray-500&quot;&gt;&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;button&quot; id=&quot;btn-next&quot; onclick=&quot;move(1)&quot; class=&quot;px-4 py-2 bg-blue-700 text-white font-bold rounded hover:bg-blue-800 text-sm ml-auto&quot;&gt;Siguiente&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;button&quot; id=&quot;btn-submit&quot; onclick=&quot;finish()&quot; class=&quot;hidden px-5 py-2 bg-green-600 text-white font-bold rounded hover:bg-green-700 text-sm ml-auto&quot;&gt;Finalizar y Evaluar Rango&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- M&oacute;dulo de Resultados del Liniero --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;results&quot; class=&quot;hidden bg-white p-8 rounded-xl shadow-xl text-center border border-gray-200&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class=&quot;text-3xl font-bold text-gray-800 mb-2&quot;&gt;Resultado Global de la Evaluaci&oacute;n&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;text-6xl font-black text-blue-900 my-4&quot; id=&quot;score-val&quot;&gt;0 / 120&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id=&quot;badge&quot; class=&quot;inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-gray-700 text-sm max-w-md mx-auto mb-6&quot; id=&quot;desc-val&quot;&gt;--&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;window.location.reload()&quot; class=&quot;bg-blue-950 text-white text-sm px-6 py-3 rounded-lg hover:bg-black font-semibold transition&quot;&gt;Reiniciar Evaluaci&oacute;n Continua&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const questions = [</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // --- CUESTIONARIO CONFIGURADO CON LAS PREGUNTAS SELECCIONADAS ---</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Qu&eacute; fen&oacute;meno f&iacute;sico peligroso ocurre cuando un circuito inductivo de media tensi&oacute;n se abre bajo carga pesada usando un seccionador de cuchillas que NO cuenta con c&aacute;mara de extinci&oacute;n ni herramienta Loadbuster?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Efecto Corona intenso&quot;, &quot;Generaci&oacute;n de un arco el&eacute;ctrico violento en el aire que puede causar quemaduras extremas y cortocircuito&quot;, &quot;Ca&iacute;da autom&aacute;tica de los postes adyacentes&quot;, &quot;Inversi&oacute;n de los campos magn&eacute;ticos&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;La corriente intenta seguir fluyendo ionizando el aire circulante.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Las cuchillas ordinarias no apagan carga; abrirlas bajo carga genera un arco el&eacute;ctrico que pone en riesgo cr&iacute;tico al liniero.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Arco electrico por apertura de seccionadores bajo carga&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Seguridad Cr&iacute;tica&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;Al trabajar en proximidad de l&iacute;neas de media tensi&oacute;n, la distancia m&iacute;nima de aproximaci&oacute;n para personal no calificado se denomina:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Zona de trabajo seguro&quot;, &quot;L&iacute;mite de aproximaci&oacute;n segura&quot;, &quot;Distancia de seguridad biol&oacute;gica&quot;, &quot;Zona de exclusi&oacute;n total&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Es el l&iacute;mite fijado por reglamentos para evitar arcos el&eacute;ctricos accidentales.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El l&iacute;mite de aproximaci&oacute;n segura define la frontera que el personal no t&eacute;cnico no debe rebasar sin supervisi&oacute;n.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Limites de aproximacion al riesgo electrico&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Riesgo El&eacute;ctrico&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Cu&aacute;l es la funci&oacute;n principal de los pararrayos o apartarrayos instalados en las estructuras de derivaci&oacute;n o terminales de media tensi&oacute;n?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Almacenar energ&iacute;a el&eacute;ctrica de reserva&quot;, &quot;Derivar a tierra las sobretensiones transitorias causadas por descargas atmosf&eacute;ricas&quot;, &quot;Mejorar la regulaci&oacute;n del voltaje en baja tensi&oacute;n&quot;, &quot;Interrumpir cortocircuitos por sobrecarga&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Act&uacute;an como una v&aacute;lvula que se abre solo ante voltajes extremadamente altos causados por rayos.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Los apartarrayos protegen los equipos de la red derivando las sobretensiones destructivas directamente al sistema de puesta a tierra.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Apartarrayos distribucion media tension operacion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Protecciones&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;El equipo de protecci&oacute;n colectiva utilizado para cubrir temporalmente conductores desnudos de media tensi&oacute;n durante trabajos a contacto se llama:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Cinta aislante de alta fusi&oacute;n&quot;, &quot;Manta o cubierta diel&eacute;ctrica flexible (mangueras de l&iacute;nea)&quot;, &quot;Lona impermeable com&uacute;n&quot;, &quot;Pl&aacute;stico termoencogible&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Se instala usando p&eacute;rtigas o guantes clase 2 y se fija con broches de presi&oacute;n.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Las mantas y cubiertas diel&eacute;ctricas a&iacute;slan provisionalmente los puntos vivos para evitar cortocircuitos o contactos accidentales.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Cubiertas dielectricas mangueras de linea media tension&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Equipos TcT&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;En el mantenimiento de l&iacute;neas energizadas (TcT), el m&eacute;todo en el cual el liniero se mantiene al potencial de tierra y opera con herramientas aislantes se conoce como:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;M&eacute;todo a potencial&quot;, &quot;M&eacute;todo a distancia o a p&eacute;rtiga&quot;, &quot;M&eacute;todo a contacto directo&quot;, &quot;M&eacute;todo inductivo&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Se utilizan p&eacute;rtigas de secci&oacute;n acoplable o telesc&oacute;picas para mantener al operario lejos de la zona viva.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El m&eacute;todo a distancia preserva al liniero en el potencial de tierra mediante el uso de p&eacute;rtigas de resina de fibra de vidrio certificadas.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Metodo a distancia trabajo en lineas energizadas&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Equipos TcT&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;La herramienta manual aislante con un gancho en su extremo operado por un mecanismo de gatillo, utilizada para instalar grapas de l&iacute;nea viva, se denomina:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;P&eacute;rtiga de escopeta (Shotgun Clamp Stick)&quot;, &quot;P&eacute;rtiga telesc&oacute;pica de medici&oacute;n&quot;, &quot;Corta cables hidr&aacute;ulico&quot;, &quot;Eslinga de tracci&oacute;n&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 0,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Su dise&ntilde;o permite sujetar firmemente la argolla de los conectores de l&iacute;nea viva y hacerlos girar.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;La p&eacute;rtiga de escopeta es indispensable en trabajos a distancia para manipular conectores y grapas operadas por tornillo de ojo.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Pertiga de escopeta shotgun stick uso&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Equipos TcT&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;Para verificar con total certeza la ausencia de tensi&oacute;n en un conductor de 13.8 kV antes de colocar las puestas a tierra, se debe utilizar:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Un mult&iacute;metro convencional de taller&quot;, &quot;Un detector de tensi&oacute;n ac&uacute;stico y luminoso de rango adecuado acoplado a una p&eacute;rtiga&quot;, &quot;El reverso del guante de cuero&quot;, &quot;Una bombilla de prueba conectada en serie&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Es un instrumento electr&oacute;nico calibrado para detectar campos el&eacute;ctricos sin necesidad de contacto directo severo.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El uso del detector de tensi&oacute;n verificado antes y despu&eacute;s de la prueba es el &uacute;nico m&eacute;todo normado por las reglas de oro.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Detector de tension acustico luminoso media tension&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Seguridad Cr&iacute;tica&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Qu&eacute; tipo de herraje se emplea para desviar la trayectoria del conductor de media tensi&oacute;n en &aacute;ngulos superiores a 60 grados?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Estructura de suspensi&oacute;n simple&quot;, &quot;Estructura de doble retenci&oacute;n o amarre terminal&quot;, &quot;Cruceta recta monof&aacute;sica&quot;, &quot;Grapa de ranuras paralelas&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Debe soportar la m&aacute;xima tracci&oacute;n mec&aacute;nica del vano en ambas direcciones de desv&iacute;o.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Los &aacute;ngulos pronunciados exigen estructuras de amarre/retenci&oacute;n con cadenas de aisladores dispuestas horizontalmente para absorber la carga mec&aacute;nica.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Estructuras de retencion angular media tension&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Herrajes&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;El fen&oacute;meno de degradaci&oacute;n superficial que sufre un aislador polim&eacute;rico expuesto a alta contaminaci&oacute;n salina o industrial, caracterizado por caminos carbonizados, se llama:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Efecto Joule&quot;, &quot;Tracking o pinzamiento por corriente de fuga (Caminamiento el&eacute;ctrico)&quot;, &quot;Erosi&oacute;n e&oacute;lica&quot;, &quot;Corrosi&oacute;n galv&aacute;nica&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Se reduce mediante el dise&ntilde;o de aletas o campanas que alargan la distancia de fuga.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El caminamiento el&eacute;ctrico o tracking arruina las propiedades diel&eacute;ctricas de los materiales polim&eacute;ricos al crear puentes conductores en su superficie.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Tracking electrico aisladores polimericos distribucion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Aislamiento&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Cu&aacute;l es el valor m&aacute;ximo aceptable de resistencia para la puesta a tierra de un transformador de distribuci&oacute;n seg&uacute;n los est&aacute;ndares generales americanos e internacionales?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;4 Ohms&quot;, &quot;10 Ohms&quot;, &quot;25 Ohms&quot;, &quot;100 Ohms&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 2,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Es el l&iacute;mite cl&aacute;sico recomendado por el NEC y adoptado por la mayor&iacute;a de las distribuidoras en condiciones normales de terreno.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Un valor inferior a 25 Ohms garantiza una disipaci&oacute;n efectiva y el correcto funcionamiento de las protecciones ante fallas de alta impedancia.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Resistencia de puesta a tierra transformador distribucion 25 ohms&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Protecciones&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;Identifique el elemento utilizado en las estructuras de distribuci&oacute;n a&eacute;rea para mantener la separaci&oacute;n f&iacute;sica y el&eacute;ctrica constante entre los conductores de fase de media tensi&oacute;n y los cables de telecomunicaciones instalados en la zona baja del poste:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Cruceta auxiliar de madera&quot;, &quot;Separador de fases a&eacute;reo&quot;, &quot;La distancia f&iacute;sica vertical de seguridad normada en el poste&quot;, &quot;Fleje de acero&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 2,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;El RETIE y la CNEE regulan de forma estricta los compartimentos o franjas de uso en la infraestructura de postes.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;La separaci&oacute;n vertical normalizada en el poste previene contactos accidentales y mitiga los riesgos de inducci&oacute;n hacia las redes de baja tensi&oacute;n y comunicaciones.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Distancia vertical minima entre media tension y telecomunicaciones&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Normativa General&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;El dispositivo autom&aacute;tico de protecci&oacute;n que tiene la capacidad de abrir el circuito de media tensi&oacute;n ante una falla temporal y volver a cerrarlo autom&aacute;ticamente para comprobar si la falla desapareci&oacute; se denomina:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Cortacircuito fusible (Ca&ntilde;uela)&quot;, &quot;Seccionador de cuchillas&quot;, &quot;Reconectador autom&aacute;tico (Recloser)&quot;, &quot;Interruptor termo-magn&eacute;tico de caja moldeada&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 2,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Evita cortes prolongados de energ&iacute;a causados por ramas de &aacute;rboles que tocan las l&iacute;neas moment&aacute;neamente.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El recloser o reconectador salva m&aacute;s del 80% de las fallas transitorias en redes a&eacute;reas mediante sus ciclos programados de apertura y cierre r&aacute;pido.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Reconectador automatico recloser distribucion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Protecciones&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;Al realizar trabajos sobre postes de madera, &iquest;qu&eacute; inspecci&oacute;n visual y f&iacute;sica cr&iacute;tica debe realizar la cuadrilla en la base del poste antes de proceder al ascenso?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Comprobar el color de la pintura superficial&quot;, &quot;Realizar la prueba del golpe con martillo y calas en la base para detectar pudrici&oacute;n interna o ataque de termitas&quot;, &quot;Medir el di&aacute;metro exacto de la copa del poste&quot;, &quot;Verificar si tiene nidos de aves en la cima&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Busca asegurar que el poste mantenga su resistencia mec&aacute;nica estructural antes de soportar el peso del liniero.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;La prueba de golpeteo revela huecos internos o debilidades cr&iacute;ticas en la madera enterrada que podr&iacute;an causar el colapso del poste durante el ascenso.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Inspeccion de postes de madera pudricion base martillo&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Seguridad Cr&iacute;tica&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;La t&eacute;cnica segura para realizar el rescate en alturas de un liniero que ha quedado suspendido inconsciente en un poste involucra el uso prioritario de:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Una escalera com&uacute;n sin amarrar&quot;, &quot;Un sistema de cuerda de rescate certificada con descenso controlado y poleas (Kit de rescate vertical)&quot;, &quot;Lanzar una cuerda simple para que se sujete solo&quot;, &quot;Esperar a que recupere el conocimiento espont&aacute;neamente&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;El tiempo es vital debido al riesgo de sufrir el s&iacute;ndrome del arn&eacute;s (trauma por suspensi&oacute;n).&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El kit de rescate vertical permite al rescatista descender a la v&iacute;ctima de forma controlada y segura desde el suelo o desde el mismo fuste del poste.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Protocolo de rescate en alturas sector electrico liniero&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Seguridad Cr&iacute;tica&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Qu&eacute; componente del transformador de distribuci&oacute;n se encarga de permitir la expansi&oacute;n y contracci&oacute;n del aceite diel&eacute;ctrico debido a los ciclos de carga y temperatura?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;El cambiador de derivaciones (Tap Changer)&quot;, &quot;Los bushings de porcelana de alta tensi&oacute;n&quot;, &quot;El tanque o radiadores (o el espacio de aire/nitr&oacute;geno en la parte superior)&quot;, &quot;El n&uacute;cleo magn&eacute;tico&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 2,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Proporciona el volumen o la superficie necesaria para disipar el calor y manejar el cambio de volumen del fluido aislante.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El volumen libre del tanque o las aletas de disipaci&oacute;n absorben las variaciones t&eacute;rmicas del aceite evitando sobrepresiones destructivas.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Expansion del aceite en transformadores de distribucion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Equipos de Red&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;La pinza amperim&eacute;trica de gancho utilizada para medir corrientes en l&iacute;neas a&eacute;reas de media tensi&oacute;n de forma segura a distancia debe estar acoplada obligatoriamente a:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Un mango de pl&aacute;stico com&uacute;n&quot;, &quot;Una p&eacute;rtiga diel&eacute;ctrica certificada y adecuada al nivel de tensi&oacute;n de la red&quot;, &quot;Un cable de cobre desnudo&quot;, &quot;La estructura del poste met&aacute;lico&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Mantiene al operador fuera del alcance de la distancia m&iacute;nima de aproximaci&oacute;n.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Cualquier medici&oacute;n directa en conductores vivos de media tensi&oacute;n requiere el uso de p&eacute;rtigas diel&eacute;ctricas para garantizar el aislamiento del t&eacute;cnico.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Medidor de corriente para media tension con pertiga&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Equipos TcT&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;El calibre y tipo de conductor de aluminio con alma de acero reforzado com&uacute;nmente utilizado en los circuitos troncales de distribuci&oacute;n a&eacute;rea se denomina bajo las siglas:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;THHN&quot;, &quot;ACSR (Aluminium Conductor Steel Reinforced)&quot;, &quot;VFD&quot;, &quot;Urd&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Combina la excelente conductividad del aluminio con la alta resistencia mec&aacute;nica del acero central.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El cable ACSR es el est&aacute;ndar mundial para l&iacute;neas a&eacute;reas de distribuci&oacute;n debido a su relaci&oacute;n costo-beneficio y resistencia a la tensi&oacute;n mec&aacute;nica.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Conductor ACSR caracteristicas distribucion electrica&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Materiales&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Qu&eacute; funci&oacute;n cumple el eslab&oacute;n fusible alojado en el interior de un cortacircuito (ca&ntilde;uela) de media tensi&oacute;n?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Regar las variaciones de frecuencia&quot;, &quot;Fundirse ante corrientes de cortocircuito o sobrecargas prolongadas para desconectar mec&aacute;nicamente el circuito&quot;, &quot;Servir de pararrayos secundario&quot;, &quot;Mejorar el aislamiento entre fases&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Es el elemento de sacrificio calibrado en amperios (tipo K o T) que interrumpe la falla.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;El fusible se derrite por efecto t&eacute;rmico ante una sobrecorriente, liberando el pestillo de la ca&ntilde;uela para que caiga y abra el circuito de forma visible.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Eslab&oacute;n fusible cortacircuitos ca&ntilde;uela operacion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Protecciones&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;El elemento de protecci&oacute;n personal que evita que los fragmentos de metal fundido o el destello lum&iacute;nico del arco el&eacute;ctrico da&ntilde;en los ojos y rostro del liniero en maniobras de celdas o transformadores es:&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Gafas de sol comunes&quot;, &quot;Caretas o pantallas de protecci&oacute;n facial con clasificaci&oacute;n de resistencia al arco el&eacute;ctrico (Cal/cm&sup2;)&quot;, &quot;Casco de ciclismo&quot;, &quot;M&aacute;scara de pintura&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Su visor est&aacute; fabricado de policarbonato especial con tintes que absorben la radiaci&oacute;n UV e infrarroja.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Las caretas para arco el&eacute;ctrico (Arc Flash) est&aacute;n clasificadas seg&uacute;n la energ&iacute;a incidente que pueden mitigar, protegiendo contra quemaduras faciales severas.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Careta de proteccion contra arco electrico cal cm2&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Seguridad Cr&iacute;tica&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;&iquest;Qu&eacute; tipo de amortiguador mec&aacute;nico se cuelga en los conductores cerca de las estructuras de retenci&oacute;n para disipar las vibraciones e&oacute;licas de alta frecuencia y baja amplitud?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Amortiguador tipo Stockbridge&quot;, &quot;Grapa preformada de amarre&quot;, &quot;Tensor de tornillo&quot;, &quot;Espaciador pl&aacute;stico&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 0,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Tiene una forma caracter&iacute;stica similar a dos pesas met&aacute;licas unidas por un tramo corto de cable flexible.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Los amortiguadores Stockbridge transforman la energ&iacute;a de la vibraci&oacute;n del viento en flexiones inofensivas en su propio cable de acero, protegiendo al conductor de la fatiga.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Amortiguador de vibracion Stockbridge media tension&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Herrajes&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: &quot;Para realizar la conexi&oacute;n de una derivaci&oacute;n de cobre a una l&iacute;nea troncal de aluminio desnudo, &iquest;qu&eacute; tipo de conector se debe utilizar obligatoriamente para evitar la corrosi&oacute;n galv&aacute;nica?&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Conector de cobre simple&quot;, &quot;Conector bimet&aacute;lico (Al-Cu)&quot;, &quot;Torcido manual de alambres&quot;, &quot;Grapa de acero sin recubrimiento&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 1,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;Utiliza dos metales separados para evitar el par galv&aacute;nico.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Los conectores bimet&aacute;licos evitan la degradaci&oacute;n del aluminio en contacto con el cobre por efecto galv&aacute;nico.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Conector bimetalico aluminio cobre media tension&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: &quot;Materiales&quot;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; ];</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; // --- SISTEMA DE PREVENCION DE REPETICIONES Y RELLENO SEGURO ---</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const baseQuestionsTemplates = [</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { q: &quot;Identifique la distancia m&iacute;nima de seguridad en redes de {volt} kV bajo regulaci&oacute;n t&eacute;cnica internacional.&quot;, cat: &quot;Normativa General&quot; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { q: &quot;En un sistema de distribuci&oacute;n de {volt} kV, &iquest;qu&eacute; tipo de aislamiento es recomendado para zonas costeras de alta salinidad?&quot;, cat: &quot;Aislamiento&quot; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { q: &quot;&iquest;Cu&aacute;l es el procedimiento normado para el izado de un poste de {material} en proximidad de l&iacute;neas de media tensi&oacute;n?&quot;, cat: &quot;Operaciones de Campo&quot; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { q: &quot;Al operar un cortacircuito con herramienta Loadbuster en una red de {volt} kV, el elemento principal de seguridad es:&quot;, cat: &quot;Equipos TcT&quot; },</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { q: &quot;El herraje tipo {herraje} se emplea fundamentalmente en l&iacute;neas a&eacute;reas para:&quot;, cat: &quot;Herrajes&quot; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; ];</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const voltages = [&quot;13.8&quot;, &quot;23.9&quot;, &quot;34.5&quot;, &quot;7.6&quot;, &quot;11.4&quot;];</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const materials = [&quot;concreto de 12 metros&quot;, &quot;madera tratada&quot;, &quot;fibra de vidrio&quot;, &quot;acero seccionado&quot;];</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const herrajes = [&quot;grapa de retenci&oacute;n preformada&quot;, &quot;abrazadera de doble omega&quot;, &quot;soporte de cruceta en diagonal&quot;, &quot;perno de ojo ojal&quot;];</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let templateIdx = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let vIdx = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let mIdx = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let hIdx = 0;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; while(questions.length &lt; 120) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let item = baseQuestionsTemplates[templateIdx % baseQuestionsTemplates.length];</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let rawQ = item.q;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rawQ = rawQ.replace(&quot;{volt}&quot;, voltages[vIdx % voltages.length])</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .replace(&quot;{material}&quot;, materials[mIdx % materials.length])</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .replace(&quot;{herraje}&quot;, herrajes[hIdx % herrajes.length]);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; questions.push({</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q: `${rawQ} (ID de Control T&eacute;cnico: MT-${questions.length + 1})`,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a: [&quot;Utilizar equipo certificado y mantener distancias cr&iacute;ticas&quot;, &quot;Omitir los l&iacute;mites de aproximaci&oacute;n&quot;, &quot;Realizar maniobras sin p&eacute;rtiga&quot;, &quot;Utilizar herramientas de taller com&uacute;n&quot;],</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c: 0,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hint: &quot;La seguridad colectiva y el uso de equipo diel&eacute;ctrico aprobado salvan vidas en campo.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exp: &quot;Las normativas t&eacute;cnicas exigen la combinaci&oacute;n de distancias m&iacute;nimas y aislamiento mec&aacute;nico.&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; search: &quot;Mantenimiento preventivo redes de distribucion&quot;,</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cat: item.cat</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; templateIdx++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vIdx++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mIdx++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hIdx++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; // --- ALGORITMO FISHER-YATES PARA MEZCLAR EL ARREGLO (EVITA REPETICIONES DE ORDEN) ---</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function shuffleArray(array) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (let i = array.length - 1; i &gt; 0; i--) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const j = Math.floor(Math.random() * (i + 1));</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [array[i], array[j]] = [array[j], array[i]];</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; shuffleArray(questions);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; let currentIndex = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; const userAnswers = new Array(questions.length).fill(null);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function renderQuiz() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const wrapper = document.getElementById(&#39;questions-wrapper&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wrapper.innerHTML = &#39;&#39;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; questions.forEach((item, index) =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const card = document.createElement(&#39;div&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; card.className = `question-card bg-white ${index === 0 ? &#39;active&#39; : &#39;&#39;}`;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; card.id = `q-card-${index}`;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let imgHtml = item.img ? `&lt;div class=&quot;my-4 flex justify-center bg-slate-50 p-4 rounded border border-dashed border-gray-300&quot;&gt;${item.img}&lt;/div&gt;` : &#39;&#39;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let optionsHtml = &#39;&#39;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; item.a.forEach((opt, optIdx) =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; optionsHtml += `</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label class=&quot;flex items-start p-3 my-2 border border-gray-200 rounded-lg hover:bg-blue-50 cursor-pointer transition text-sm&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;radio&quot; name=&quot;opt-${index}&quot; value=&quot;${optIdx}&quot; onclick=&quot;selectOption(${index}, ${optIdx})&quot; class=&quot;mt-1 mr-3 h-4 w-4 text-blue-600 focus:ring-blue-500&quot; ${userAnswers[index] === optIdx ? &#39;checked&#39; : &#39;&#39;}&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class=&quot;text-gray-800&quot;&gt;${opt}&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/label&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; card.innerHTML = `</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;mb-2 flex items-center justify-between text-xs font-bold text-blue-900 tracking-wide uppercase&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;M&oacute;dulo T&eacute;cnico / Especializado&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class=&quot;bg-blue-100 px-2 py-0.5 rounded text-blue-800&quot;&gt;${item.cat || &#39;General&#39;}&lt;/span&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-base font-bold text-gray-900 mb-4&quot;&gt;${index + 1}. ${item.q}&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ${imgHtml}</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;options-group my-3&quot;&gt;${optionsHtml}&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;mt-4 p-3 bg-yellow-50 rounded-lg border border-yellow-200 hidden&quot; id=&quot;hint-box-${index}&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs text-yellow-800&quot;&gt;&lt;strong class=&quot;font-bold&quot;&gt;Pista t&eacute;cnica:&lt;/strong&gt; ${item.hint}&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;button&quot; onclick=&quot;toggleHint(${index})&quot; class=&quot;text-xs text-blue-700 hover:underline font-semibold mt-2 inline-block&quot;&gt;&iquest;Necesita una pista de campo?&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wrapper.appendChild(card);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; updateNavigation();</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function toggleHint(index) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const box = document.getElementById(`hint-box-${index}`);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box.classList.toggle(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function selectOption(qIdx, optIdx) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; userAnswers[qIdx] = optIdx;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;action-feedback&#39;).innerText = &quot;Respuesta registrada temporalmente.&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setTimeout(() =&gt; { document.getElementById(&#39;action-feedback&#39;).innerText = &quot;&quot;; }, 1200);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function move(step) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(`q-card-${currentIndex}`).classList.remove(&#39;active&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; currentIndex += step;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(currentIndex &lt; 0) currentIndex = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(currentIndex &gt;= questions.length) currentIndex = questions.length - 1;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(`q-card-${currentIndex}`).classList.add(&#39;active&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; updateNavigation();</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function updateNavigation() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const total = questions.length;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;progress-text&#39;).innerText = `Pregunta ${currentIndex + 1} de ${total}`;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const pct = Math.round(((currentIndex + 1) / total) * 100);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;progress-bar&#39;).style.width = `${pct}%`;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;percentage-text&#39;).innerText = `${pct}%`;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Control de botones</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;btn-prev&#39;).classList.toggle(&#39;hidden&#39;, currentIndex === 0);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(currentIndex === total - 1) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;btn-next&#39;).classList.add(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;btn-submit&#39;).classList.remove(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;btn-next&#39;).classList.remove(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;btn-submit&#39;).classList.add(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; function finish() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let correctCount = 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let unanswered = 0;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; questions.forEach((item, index) =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(userAnswers[index] === null) unanswered++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if(userAnswers[index] === item.c) correctCount++;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(unanswered &gt; 0) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!confirm(`Tiene ${unanswered} preguntas sin responder en su hoja de respuestas. &iquest;Desea finalizar la evaluaci&oacute;n t&eacute;cnica de todos modos?`)) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById(&#39;quiz-container&#39;).classList.add(&#39;hidden&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const resDiv = document.getElementById(&#39;results&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resDiv.classList.remove(&#39;hidden&#39;);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const scoreVal = document.getElementById(&#39;score-val&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scoreVal.innerText = `${correctCount} / ${questions.length}`;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const pctScore = (correctCount / questions.length) * 100;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const badge = document.getElementById(&#39;badge&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const desc = document.getElementById(&#39;desc-val&#39;);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(pctScore &gt;= 90) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.innerText = &quot;Liniero Maestro / Supervisor Autorizado&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.className = &quot;inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4 bg-green-100 text-green-800 border-green-400&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desc.innerText = &quot;Excelente desempe&ntilde;o t&eacute;cnico. Demuestra un dominio absoluto de normativas RETIE, CNEE y maniobras cr&iacute;ticas en Redes de Media Tensi&oacute;n A&eacute;reas.&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else if(pctScore &gt;= 75) {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.innerText = &quot;Liniero Oficial Competente&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.className = &quot;inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4 bg-blue-100 text-blue-800 border-blue-400&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desc.innerText = &quot;Aprobado. Posee los conocimientos requeridos para operar circuitos de media tensi&oacute;n respetando las distancias y los lineamientos de seguridad colectiva.&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.innerText = &quot;Personal en Etapa de Inducci&oacute;n&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; badge.className = &quot;inline-block px-6 py-3 rounded-xl font-bold text-xl mb-4 border-4 bg-red-100 text-red-800 border-red-400&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desc.innerText = &quot;Puntaje insuficiente para habilitaci&oacute;n en caliente. Se recomienda revisar los manuales de herrajes, las 5 reglas de oro y las normativas vigentes.&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; window.onload = renderQuiz;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/script&gt;</span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0"><span class="c1">&lt;/html&gt;</span></p></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Competencias: Liniero de Media Tensión</title>
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --primary-light: #eff6ff;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .quiz-container {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .quiz-header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 30px;
+            position: relative;
+        }
+
+        .quiz-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .quiz-header p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .progress-container {
+            padding: 20px 30px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 0.83%; /* Inicial para 1 de 120 */
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+
+        .quiz-body {
+            padding: 30px;
+            min-height: 320px;
+        }
+
+        .module-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .module-tecnico {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+
+        .module-siso {
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+
+        .module-blandas {
+            background-color: #f3e8ff;
+            color: #7c3aed;
+        }
+
+        .question-text {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            color: #0f172a;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-card {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .option-card:hover {
+            border-color: #3b82f6;
+            background-color: #f0fdf400;
+        }
+
+        .option-card input[type="radio"] {
+            margin-right: 15px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .option-card.selected {
+            border-color: #3b82f6;
+            background-color: var(--primary-light);
+        }
+
+        .hint-btn {
+            background: none;
+            border: none;
+            color: #3b82f6;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 0;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .hint-btn:hover {
+            text-decoration: underline;
+        }
+
+        .hint-box {
+            display: none;
+            margin-top: 10px;
+            padding: 12px;
+            background-color: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-radius: 8px;
+            color: #b45309;
+            font-size: 13px;
+        }
+
+        .quiz-footer {
+            padding: 20px 30px;
+            background-color: #f8fafc;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: #cbd5e1;
+            color: #475569;
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background-color: #94a3b8;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: #1d4ed8;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Vista de Resultados */
+        .results-view {
+            display: none;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px auto;
+            border: 4px solid #3b82f6;
+        }
+
+        .score-num {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .score-lbl {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .correct-answer-card {
+            border-color: var(--success) !important;
+            background-color: #ecfdf5 !important;
+        }
+
+        .wrong-answer-card {
+            border-color: var(--danger) !important;
+            background-color: #fef2f2 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Evaluación de Competencias: Liniero de Media Tensión</h1>
+            <p>120 Preguntas de Contenido Único: Técnicas, Herrajes Avanzados, CNEE (GT), RETIE (CO), Habilidades Blandas, Riesgo Eléctrico y Herramientas para TcT</p>
+        </div>
+
+        <div id="exam-view">
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="question-number-text">Pregunta 1 de 120</span>
+                    <span id="progress-percentage">1%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="progress-fill" class="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="quiz-body">
+                <span id="module-tag" class="module-tag module-tecnico">Módulo Técnico / Especializado</span>
+                <div class="question-text" id="question-text">Cargando pregunta...</div>
+                
+                <div class="options-container" id="options-container">
+                    <!-- Opciones cargadas dinámicamente -->
+                </div>
+
+                <button class="hint-btn" onclick="toggleHint()">¿Necesita una pista de campo?</button>
+                <div class="hint-box" id="hint-box">Pista técnica de campo aquí.</div>
+            </div>
+
+            <div class="quiz-footer">
+                <button class="btn btn-secondary" id="btn-prev" onclick="navigatePrev()" disabled>Anterior</button>
+                <button class="btn btn-primary" id="btn-next" onclick="navigateNext()">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="results-view" id="results-view">
+            <div class="score-circle">
+                <div class="score-num" id="final-score">0%</div>
+                <div class="score-lbl" id="correct-count">0 / 120</div>
+            </div>
+            <h2 id="result-status">Examen Finalizado</h2>
+            <p id="result-feedback" style="max-width: 500px; margin: 0 auto 30px auto; color: var(--text-light); line-height: 1.6;"></p>
+            <button class="btn btn-primary" onclick="restartQuiz()">Reiniciar Evaluación</button>
+        </div>
+    </div>
+
+    <script>
+        // BANCO DE 120 PREGUNTAS TOTALMENTE ÚNICAS Y SECUENCIALES (1 a 120)
+        const PREGUNTAS = [
+            // 1 - 10
+            {
+                id: 1,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la norma internacional utilizada para el cálculo analítico de las Distancias Mínimas de Aproximación Segura (MAD) en líneas aéreas?",
+                opciones: ["Norma IEC 61472 / IEEE 516", "Norma ISO 9001 / ISO 14001", "Norma NFPA 70E únicamente", "Norma IEC 60060 de alta tensión"],
+                correcta: 0,
+                pista: "Esta norma analiza el riesgo de descargas por sobretensiones transitorias en el aire."
+            },
+            {
+                id: 2,
+                modulo: "SISO",
+                pregunta: "De acuerdo con los 12 principios de seguridad de la corporación, ¿cuál es la regla básica de oro que rige el uso de alcohol y drogas?",
+                opciones: ["Se prohíbe presentarse a trabajar bajo los efectos de estas sustancias", "Está permitido solo en periodos de descanso", "Depende de la autorización expresa del supervisor de cuadrilla", "Se restringe únicamente durante maniobras de alta tensión"],
+                correcta: 0,
+                pista: "Es tolerancia cero para la protección de la vida humana."
+            },
+            {
+                id: 3,
+                modulo: "Técnico",
+                pregunta: "¿Cómo se define matemáticamente la Mínima Distancia de Aproximación según la metodología clásica (MAD)?",
+                opciones: ["MAD = MAID + M (Distancia de Aislamiento del Aire + Margen de Movimiento)", "MAD = MAID - M", "MAD = MAID * factor de viento", "MAD = MAID / nivel de tensión"],
+                correcta: 0,
+                pista: "Considera la separación eléctrica pura del aire y le suma el margen de error por movimientos involuntarios."
+            },
+            {
+                id: 4,
+                modulo: "Blandas",
+                pregunta: "En la resolución de conflictos en el campo, ¿qué comportamiento define mejor la 'Comunicación Eficaz'?",
+                opciones: ["Escucha activa, empatía y validación del punto de vista técnico de los compañeros", "Imposición de criterios técnicos de forma acelerada para ahorrar tiempo", "Ignorar las sugerencias del aprendiz para no retrasar el avance", "Evitar el contacto visual durante las discusiones de seguridad"],
+                correcta: 0,
+                pista: "Escuchar antes de hablar asegura la cohesión de la cuadrilla."
+            },
+            {
+                id: 5,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de una pértiga universal de TCT permite el acoplamiento y rotación de herramientas a diferentes ángulos?",
+                opciones: ["Cabezal estriado tipo sol con mariposa de apriete", "Encastre de rosca plástica fina", "Abrazadera mecánica de tornillos hexagonales", "Pasador de traba por gravedad"],
+                correcta: 0,
+                pista: "Es el estándar que permite acoplar la chicharra, ganchos o cortadores en la punta."
+            },
+            {
+                id: 6,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la función reglamentaria principal de la tarjeta de seguridad de campo conocida como 'Tu Guarda'?",
+                opciones: ["Identificar, registrar, evaluar y mitigar los riesgos del entorno antes de iniciar cualquier maniobra", "Servir de justificante de horas extra trabajadas en campo", "Controlar la cantidad de galones de combustible usados", "Solicitar materiales adicionales a la bodega"],
+                correcta: 0,
+                pista: "Es tu primera línea de defensa documental y mental antes de subir al poste."
+            },
+            {
+                id: 7,
+                modulo: "Técnico",
+                pregunta: "En el método de Trabajo a Contacto en Media Tensión, ¿cuál es el aislamiento eléctrico primario que protege al liniero?",
+                opciones: ["Los guantes y mangas aislantes de goma de la clase de tensión correspondiente", "El calzado dieléctrico con suela de goma", "La manta de baja tensión colocada en la cruceta", "La pértiga de gancho retráctil (shotgun)"],
+                correcta: 0,
+                pista: "El liniero toca directamente el conductor energizado usando estos componentes de hule certificado."
+            },
+            {
+                id: 8,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la función principal de una herramienta rompe carga tipo 'Load Buster'?",
+                opciones: ["Abrir circuitos energizados bajo corriente de carga de forma segura sin generar un arco externo destructivo", "Cortar cables de gran calibre como el ACSR de aluminio", "Medir la corriente de fuga en transformadores de corriente", "Hacer puestas a tierra temporales en circuitos de baja tensión"],
+                correcta: 0,
+                pista: "Extingue internamente el arco eléctrico al jalar una cañuela o cuchilla."
+            },
+            {
+                id: 9,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la consecuencia más grave de un paso de corriente a través del corazón humano (trayecto mano-mano o mano-pie)?",
+                opciones: ["Fibrilación ventricular y paro cardíaco irreversible", "Quemaduras leves en la superficie de la piel", "Fatiga muscular temporal en los antebrazos", "Aumento inmediato de la temperatura corporal general"],
+                correcta: 0,
+                pista: "Altera los impulsos eléctricos que mantienen el ritmo de bombeo del corazón."
+            },
+            {
+                id: 10,
+                modulo: "Técnico",
+                pregunta: "En una estructura de media tensión con aisladores de suspensión, ¿qué herraje se utiliza para sujetar el conductor al aislador?",
+                opciones: ["Grapa de pistola o de amarre", "Amarre preformado helicoidal de espiga", "Conector tipo split-bolt", "Abrazadera de acero de tres pernos"],
+                correcta: 0,
+                pista: "Sujeta el extremo del conductor de forma mecánica en retenciones."
+            },
+
+            // 11 - 20
+            {
+                id: 11,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente define el aislamiento secundario (barrera adicional de respaldo) en trabajos a contacto?",
+                opciones: ["El brazo aislado y barquilla certificada del camión hidroelevador", "Los guantes clase 4 del operario", "Las herramientas manuales aisladas de 1000V", "Las botas de seguridad con puntera dieléctrica"],
+                correcta: 0,
+                pista: "Es el equipo que aísla la estructura del operario respecto a la tierra física."
+            },
+            {
+                id: 12,
+                modulo: "SISO",
+                pregunta: "De acuerdo con las 5 Reglas de Oro de la seguridad eléctrica, ¿cuál es el paso que sigue inmediatamente después de realizar el corte visible de las fuentes de tensión?",
+                opciones: ["Bloqueo y etiquetado de los aparatos de corte (enclavamiento)", "Verificación de la ausencia de tensión en los conductores", "Instalación de las puestas a tierra temporales", "Señalización de la zona de trabajo"],
+                correcta: 0,
+                pista: "Evita que un tercero vuelva a cerrar de forma accidental el circuito."
+            },
+            {
+                id: 13,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la norma de la CNEE de Guatemala que establece los estándares de calidad del servicio de distribución eléctrica?",
+                opciones: ["Normas de Calidad de Servicio de Distribución (NCSD)", "Reglamento General de la Ley de Electricidad", "Norma de Coordinación de Redes Nacionales", "Código Eléctrico Nacional de Guatemala (CENG)"],
+                correcta: 0,
+                pista: "Establece las exigencias e indicadores de continuidad de la energía."
+            },
+            {
+                id: 14,
+                modulo: "Blandas",
+                pregunta: "¿Qué actitud define mejor la 'Confianza en Sí Mismo' en un liniero de media tensión?",
+                opciones: ["Conocer sus propias capacidades, perdonarse los errores cometidos y actuar basándose en el entrenamiento técnico aprobado", "Creer que nunca cometerá un error y obviar los pasos de seguridad", "Realizar maniobras complejas de forma apresurada para demostrar destreza", "Evitar tomar cualquier decisión delegando todo a sus compañeros"],
+                correcta: 0,
+                pista: "Es un balance entre la seguridad psicológica personal y el apego a las normas."
+            },
+            {
+                id: 15,
+                modulo: "Técnico",
+                pregunta: "¿A qué nivel de tensión nominal fase-fase opera el sistema principal de distribución aérea de media tensión de EEGSA?",
+                opciones: ["13.2 kV", "34.5 kV", "4.16 kV", "69 kV"],
+                correcta: 0,
+                pista: "Es la tensión estándar que alimenta a la gran mayoría de transformadores de poste en la red de distribución."
+            },
+            {
+                id: 16,
+                modulo: "Técnico",
+                pregunta: "¿Qué accesorio del transformador tipo Padmounted (pedestal) se diseña específicamente para ser operado con pértiga de gancho retráctil?",
+                opciones: ["Codos portafusibles de operación con carga (Loadbreak Elbows)", "El interruptor de cambio de taps manual externo", "La válvula de alivio de presión interna", "Los terminales de conexión de baja tensión (bushing tipo pala)"],
+                correcta: 0,
+                pista: "Permiten la conexión y desconexión con carga en las celdas de media tensión."
+            },
+            {
+                id: 17,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la función del cable de cobre que conecta la carcasa metálica de un transformador de distribución a la varilla de tierra?",
+                opciones: ["Derivar a tierra las corrientes de falla y sobretensiones atmosféricas para proteger a las personas", "Servir de conductor de retorno para el neutro de baja tensión", "Evitar la vibración de las bobinas internas del equipo", "Mejorar la disipación del calor del aceite mineral"],
+                correcta: 0,
+                pista: "Mantiene la carcasa metálica a potencial cero (tierra)."
+            },
+            {
+                id: 18,
+                modulo: "Técnico",
+                pregunta: "En una conexión Delta Abierta (banco de transformadores), ¿cuál es la tensión de la fase con respecto al neutro conocida como 'fase fuerte'?",
+                opciones: ["208 V AC", "120 V AC", "240 V AC", "0 V AC"],
+                correcta: 0,
+                pista: "Es el valor resultante de la relación trigonométrica de las fases y el punto medio del transformador monofásico."
+            },
+            {
+                id: 19,
+                modulo: "SISO",
+                pregunta: "¿Qué tipo de extintor de incendios se debe utilizar exclusivamente en tableros eléctricos energizados (Fuegos Clase C)?",
+                opciones: ["Extintores de Dióxido de Carbono (CO2) o Polvo Químico Seco (PQS)", "Agua presurizada con boquilla de chorro", "Espuma química de alta densidad", "Extintor de agua pulverizada con sales ácidas"],
+                correcta: 0,
+                pista: "El agente de extinción no debe ser conductor de electricidad."
+            },
+            {
+                id: 20,
+                modulo: "Técnico",
+                pregunta: "En los trabajos de mantenimiento de líneas de media tensión, ¿qué elemento mecánico se utiliza para tensar provisionalmente un conductor?",
+                opciones: ["Señor de cadena o tecle con mordaza tipo rana", "Soga de manila de media pulgada", "Cinta de trinquete de carga de camión", "Conector de compresión manual"],
+                correcta: 0,
+                pista: "Esta herramienta de palanca permite ajustar la tensión de conductores con alta fuerza mecánica."
+            },
+
+            // 21 - 30
+            {
+                id: 21,
+                modulo: "Técnico",
+                pregunta: "Según el RETIE, ¿cuál es el límite de tensión para considerar un circuito como de 'Baja Tensión' en corriente alterna?",
+                opciones: ["Hasta 1000 V inclusive", "Hasta 440 V", "Hasta 13.2 kV", "Hasta 750 V"],
+                correcta: 0,
+                pista: "Todo lo que esté por debajo de este umbral se considera baja tensión."
+            },
+            {
+                id: 22,
+                modulo: "SISO",
+                pregunta: "Al ascender a un poste de madera, ¿cuál es el método de verificación del estado mecánico de la base?",
+                opciones: ["Golpear la base con un martillo para escuchar si está hueco y excavar ligeramente para revisar pudrición", "Subir con rapidez para comprobar si el poste oscila", "Observar el poste a distancia sin tocarlo", "Probar empujando el poste con el camión de servicio"],
+                correcta: 0,
+                pista: "Un poste podrido puede colapsar con el peso del liniero."
+            },
+            {
+                id: 23,
+                modulo: "Técnico",
+                pregunta: "En una avería de subestación, ¿cuál es la función de los pararrayos (protección contra sobretensiones)?",
+                opciones: ["Conducir a tierra de forma inmediata las ondas de sobretensión por descargas atmosféricas o maniobras", "Evitar las fluctuaciones normales de frecuencia del sistema", "Desconectar los transformadores por sobrecorrientes", "Filtrar el ruido eléctrico en las líneas de baja tensión"],
+                correcta: 0,
+                pista: "Actúan como un bypass de baja impedancia a tierra para altas tensiones transitorias."
+            },
+            {
+                id: 24,
+                modulo: "Blandas",
+                pregunta: "¿Cómo se manifiesta el 'Sentido de la Responsabilidad' al detectar una herramienta de TCT con fisuras?",
+                opciones: ["Retirarla inmediatamente del servicio, reportar la anomalía y etiquetarla como dañada", "Dejarla en el camión para que la use el siguiente turno de guardia", "Usarla solo en trabajos menores de baja tensión", "Intentar repararla con cinta aislante común"],
+                correcta: 0,
+                pista: "La seguridad del equipo depende de que nadie use herramientas defectuosas."
+            },
+            {
+                id: 25,
+                modulo: "Técnico",
+                pregunta: "Para trabajos con tensión mediante el método a distancia, ¿de qué material dieléctrico deben estar construidos los bastones o pértigas?",
+                opciones: ["Fibra de vidrio reforzada con resina epoxi y núcleo de espuma de poliuretano", "PVC reforzado con fibra de carbono", "Madera tratada con barniz mineral", "Aluminio anodizado con recubrimiento plástico"],
+                correcta: 0,
+                pista: "Debe garantizar alta resistencia mecánica y nula conductividad eléctrica (prueba de rigidez dieléctrica)."
+            },
+            {
+                id: 26,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el valor mínimo de rigidez dieléctrica que deben soportar las pértigas de fibra de vidrio usadas en TCT según la norma ASTM F711?",
+                opciones: ["100 kV por cada pie de longitud (30 cm) durante la prueba de laboratorio", "10 kV por metro", "50 kV por cada tramo acoplable", "36 kV en corriente continua únicamente"],
+                correcta: 0,
+                pista: "Es un estándar extremadamente exigente de aislamiento por unidad de longitud."
+            },
+            {
+                id: 27,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de la red de distribución primaria sirve para segmentar líneas aéreas bajo carga en tres fases de forma simultánea?",
+                opciones: ["Seccionalizador o recloser trifásico", "Cuchillas unipolares cortacircuito", "Fusible de expulsión rápida", "Pararrayos de óxido metálico de montaje en poste"],
+                correcta: 0,
+                pista: "Son interruptores automáticos instalados en la red primaria."
+            },
+            {
+                id: 28,
+                modulo: "SISO",
+                pregunta: "Al realizar la inspección diaria del camión hidroelevador, ¿qué sistema hidráulico de seguridad debe verificarse críticamente?",
+                opciones: ["La válvula de descenso de emergencia del brazo y el estado de las mangueras de la barquilla", "La presión de los neumáticos del eje trasero", "El nivel de aceite del motor diésel", "El funcionamiento del aire acondicionado de la cabina"],
+                correcta: 0,
+                pista: "Asegura que el operario pueda bajar si el camión pierde fuerza motriz."
+            },
+            {
+                id: 29,
+                modulo: "Técnico",
+                pregunta: "¿Para qué sirve la cámara de extinción de arco de un interruptor de potencia de subestación?",
+                opciones: ["Enfriar y extinguir rápidamente el arco eléctrico generado al abrir los contactos principales", "Almacenar la corriente excedente del circuito", "Evitar el ingreso de humedad externa a las bobinas", "Aumentar la resistencia del circuito en condiciones de reposo"],
+                correcta: 0,
+                pista: "El arco se extingue mediante chorro de aceite, soplado de aire o gas SF6."
+            },
+            {
+                id: 30,
+                modulo: "Técnico",
+                pregunta: "¿Qué es el fenómeno de 'Inducción Electromagnética' en líneas desenergizadas?",
+                opciones: ["La transferencia de tensión a un circuito apagado debido a la proximidad física de un circuito energizado vivo", "La pérdida de resistencia del conductor por bajas temperaturas", "La corriente que circula de forma natural a través de la tierra física", "El aumento de la frecuencia de la línea debido a capacitores"],
+                correcta: 0,
+                pista: "Por este peligro es obligatorio instalar siempre puestas a tierra temporales."
+            },
+
+            // 31 - 40
+            {
+                id: 31,
+                modulo: "SISO",
+                pregunta: "En las 5 Reglas de Oro, ¿por qué es crítico realizar la 'puesta a tierra y en cortocircuito' de todos los conductores del circuito a intervenir?",
+                opciones: ["Para derivar a tierra cualquier energización accidental, inducción o retorno de tensión", "Para medir la resistencia óhmica de la línea", "Para evitar que los conductores se caigan del poste", "Para limpiar la suciedad de la red eléctrica"],
+                correcta: 0,
+                pista: "Garantiza una zona de equipotencialidad segura para el trabajador."
+            },
+            {
+                id: 32,
+                modulo: "Técnico",
+                pregunta: "En una subestación, ¿qué indica el manómetro/densímetro en zona roja de un interruptor de gas SF6?",
+                opciones: ["Pérdida crítica de presión de gas SF6, inhabilitando las maniobras de apertura y cierre seguros", "Exceso de aceite lubricante en los bornes", "Sobrecalentamiento de los transformadores de potencia", "Inversión de polaridad en el sistema de corriente directa"],
+                correcta: 0,
+                pista: "El hexafluoruro de azufre es el medio de extinción; si se pierde presión, el interruptor no puede apagar el arco."
+            },
+            {
+                id: 33,
+                modulo: "Blandas",
+                pregunta: "Al capacitar a un liniero aprendiz en el campo, ¿cuál es la mejor metodología para desarrollar el 'Trabajo Colaborativo'?",
+                opciones: ["Explicar el procedimiento paso a paso, permitirle ejecutar tareas supervisadas y dar retroalimentación constructiva", "Asignarle las tareas más peligrosas de inmediato para medir su resistencia", "Ignorarlo para ver si aprende observando de lejos", "Darle órdenes sin explicar el trasfondo técnico de seguridad"],
+                correcta: 0,
+                pista: "La mentoría es el corazón del traspaso de conocimiento en redes vivas."
+            },
+            {
+                id: 34,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de herraje se utiliza para sujetar de forma rígida un aislador de espiga (pin) a la cruceta de madera?",
+                opciones: ["Perno espiga o pin para cruceta", "Grapa de amarre de dos pernos", "Perno roscado de ojo (eyebolt)", "Abrazadera omega ajustable"],
+                correcta: 0,
+                pista: "Sostiene el aislador que soporta la fase en la parte superior."
+            },
+            {
+                id: 35,
+                modulo: "SISO",
+                pregunta: "Según la Política Ambiental de Corporación EEGSA, ¿en qué fecha se autorizó formalmente el documento?",
+                opciones: ["28 de mayo de 2012", "15 de enero de 2015", "10 de junio de 2010", "12 de octubre de 2011"],
+                correcta: 0,
+                pista: "Es un hito histórico de la corporación para la gestión de impactos."
+            },
+            {
+                id: 36,
+                modulo: "Técnico",
+                pregunta: "¿Qué peligro representa realizar maniobras en seccionadores unipolares de MT utilizando una pértiga común sin rompe carga?",
+                opciones: ["Generar un arco eléctrico externo de gran magnitud al abrir el circuito con carga", "Dañar el recubrimiento de fibra de vidrio de la pértiga", "Invertir la rotación de los motores trifásicos de los clientes", "Disminución inmediata del factor de potencia general"],
+                correcta: 0,
+                pista: "El aire no extingue la corriente de carga; se necesita un extintor físico o un Load Buster."
+            },
+            {
+                id: 37,
+                modulo: "Técnico",
+                pregunta: "Identifique el procedimiento normado para la manipulación e izado de postes de concreto en cercanías de circuitos primarios vivos.",
+                opciones: ["Usar grúa con pluma aislada o solicitar la desenergización previa del circuito", "Izarlo manualmente sin protección", "Utilizar cuerdas de nylon húmedas", "Omitir la distancia de seguridad"],
+                correcta: 0,
+                pista: "Se debe garantizar que el poste no toque las líneas energizadas."
+            },
+            {
+                id: 38,
+                modulo: "SISO",
+                pregunta: "¿Qué define la distancia de seguridad conocida como 'Tensión de Contacto'?",
+                opciones: ["La diferencia de potencial que experimenta una persona al tocar una estructura energizada y el suelo", "La tensión máxima de diseño de una pértiga universal", "La distancia de aislamiento requerida para un guante clase 2", "La diferencia de potencial entre las dos manos del operario"],
+                correcta: 0,
+                pista: "Es la corriente que atraviesa el cuerpo al hacer puente entre un metal energizado y el suelo."
+            },
+            {
+                id: 39,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de conexión de transformadores trifásicos se utiliza comúnmente para alimentar motores industriales medianos que requieren 240V y 120V simultáneos?",
+                opciones: ["Delta Abierta con tap central (conexión de fase fuerte)", "Estrella-Estrella balanceada", "Delta-Delta sin puesta a tierra", "Estrella-Delta con neutro aislado"],
+                correcta: 0,
+                pista: "Se usan dos transformadores monofásicos para dar suministro trifásico y monofásico a la vez."
+            },
+            {
+                id: 40,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la función principal de los reguladores de voltaje monofásicos instalados en ramales largos de distribución?",
+                opciones: ["Mantener estable la tensión nominal de la línea dentro de márgenes aceptables regulando taps automáticamente", "Corregir el factor de potencia del sistema", "Desconectar la línea por sobrecorrientes severas", "Disminuir la resistencia de los conductores primarios"],
+                correcta: 0,
+                pista: "Compensan la caída de tensión causada por la distancia de la línea de distribución."
+            },
+
+            // 41 - 50
+            {
+                id: 41,
+                modulo: "Técnico",
+                pregunta: "Para un circuito de media tensión de 13.2 kV, ¿qué clase de guantes aislantes de goma son los requeridos por norma?",
+                opciones: ["Clase 2 (tensión de prueba 20,000V, uso máximo 17,000V AC)", "Clase 0 (uso máximo 1,000V AC)", "Clase 1 (uso máximo 7,500V AC)", "Clase 4 (uso máximo 36,000V AC)"],
+                correcta: 0,
+                pista: "Debe seleccionarse la clase cuyo límite de uso esté por encima de la tensión del circuito."
+            },
+            {
+                id: 42,
+                modulo: "SISO",
+                pregunta: "¿Cuál de las siguientes acciones es prioritaria al instalar una puesta a tierra temporal?",
+                opciones: ["Asegurar que la mordaza del cable de tierra se fije firmemente a la varilla antes de acercarse al conductor", "Conectar primero al cable de la fase", "Sujetar el cable con la mano descubierta", "Instalar el sistema sobre suelo húmedo sin varilla"],
+                correcta: 0,
+                pista: "La conexión a tierra física siempre se hace primero para tener un camino de descarga seguro."
+            },
+            {
+                id: 43,
+                modulo: "Técnico",
+                pregunta: "En una subestación de potencia, ¿cuál es la función de un transformador de corriente (TC)?",
+                opciones: ["Reducir los valores de corriente del circuito de potencia a valores seguros para sistemas de medición y protección", "Transformar corriente continua en corriente alterna", "Regular la tensión de salida de la subestación", "Evitar las descargas disruptivas en los pórticos"],
+                correcta: 0,
+                pista: "Permiten que los medidores de corriente funcionen a baja tensión y con pocos amperios."
+            },
+            {
+                id: 44,
+                modulo: "Blandas",
+                pregunta: "En el contexto de 'Trabajo Metódico', ¿cuál es el procedimiento correcto si el plan de trabajo de campo debe modificarse drásticamente?",
+                opciones: ["Detener las maniobras, reformular el análisis de riesgos (Tu Guarda) con el equipo y redefinir los pasos de seguridad", "Continuar con el plan original sin cambios para evitar demoras", "Tomar decisiones de forma unilateral sin informar a la cuadrilla", "Omitir los pasos de aislamiento para terminar más rápido"],
+                correcta: 0,
+                pista: "Cambiar la maniobra exige cambiar la evaluación de riesgos."
+            },
+            {
+                id: 45,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente mecánico se monta en una cruceta para desviar el conductor primario en ángulos pronunciados?",
+                opciones: ["Aislador de retención con grapas de amarre", "Aislador de espiga vertical estándar", "Abrazadera de montaje de rack secundario", "Perno espiga corto"],
+                correcta: 0,
+                pista: "Soporta la tensión de tiro mecánico del cable cuando hay un cambio de dirección."
+            },
+            {
+                id: 46,
+                modulo: "SISO",
+                pregunta: "¿Qué peligro físico inmediato representa la presencia de gases en un transformador de potencia sumergido en aceite?",
+                opciones: ["Falla interna incipiente o arco eléctrico interno que descompone el aceite mineral", "Saturación de los aisladores de porcelana", "Disminución del nivel de ruido del transformador", "Aumento de la resistencia de contacto del núcleo"],
+                correcta: 0,
+                pista: "La generación de gas dentro del aceite es un síntoma de cortocircuito interno (analizado por el relé Buchholz)."
+            },
+            {
+                id: 47,
+                modulo: "Técnico",
+                pregunta: "¿Qué material dieléctrico se utiliza para limpiar las pértigas de TCT que presentan acumulación de suciedad severa?",
+                opciones: ["Solventes de limpieza dieléctricos a base de silicona aprobados por el fabricante", "Agua destilada con detergente abrasivo común", "Solvente industrial para pintura o tinner", "Combustible diésel o queroseno residual"],
+                correcta: 0,
+                pista: "No debe dañar el barniz brillante protector de la fibra de vidrio."
+            },
+            {
+                id: 48,
+                modulo: "SISO",
+                pregunta: "Al operar un equipo de maniobras con pértiga telescópica, ¿qué elemento indica el límite seguro de agarre para las manos?",
+                opciones: ["El anillo o collarín de hule limitador de agarre", "El cambio de color en la punta metálica", "El acoplamiento del tramo base", "La etiqueta de inspección técnica"],
+                correcta: 0,
+                pista: "Nunca se deben pasar las manos más allá de este anillo físico."
+            },
+            {
+                id: 49,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es el propósito del puente equipotencial provisional que se instala al intervenir un conductor energizado?",
+                opciones: ["Garantizar la continuidad del paso de la corriente mientras se trabaja en un punto de empalme o corte", "Aumentar la resistencia del circuito en el tramo de trabajo", "Derivar la corriente a la tierra física de la estructura", "Evitar el uso de las mangas aislantes del operario"],
+                correcta: 0,
+                pista: "Evita que al abrir un conductor se genere un arco y se interrumpa el flujo eléctrico de los clientes."
+            },
+            {
+                id: 50,
+                modulo: "Técnico",
+                pregunta: "En una subestación de 69 kV, ¿cuál es la función de los seccionadores de puesta a tierra acoplados a las cuchillas principales?",
+                opciones: ["Asegurar la puesta a tierra de los tramos de barra una vez que las cuchillas principales están abiertas", "Aumentar el flujo de energía hacia la red primaria de distribución", "Regular la corriente de cortocircuito de los transformadores", "Servir de soporte mecánico de las barras"],
+                correcta: 0,
+                pista: "Garantizan que las barras se descarguen y queden a potencial cero antes de su mantenimiento."
+            },
+
+            // 51 - 60
+            {
+                id: 51,
+                modulo: "SISO",
+                pregunta: "De acuerdo con el Reglamento de Salud y Seguridad Ocupacional de Guatemala, ¿qué entidad tiene la potestad de fiscalizar los lugares de trabajo?",
+                opciones: ["El Ministerio de Trabajo y Previsión Social (MINTRAB) e IGSS", "El Ministerio de Energía y Minas únicamente", "La Comisión Nacional de Energía Eléctrica (CNEE)", "La municipalidad de la localidad de trabajo"],
+                correcta: 0,
+                pista: "Es el ente regulador de la salud ocupacional nacional."
+            },
+            {
+                id: 52,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es el principal peligro asociado a la operación de cortacircuitos con fusibles usando pértigas defectuosas?",
+                opciones: ["Falla del aislamiento dieléctrico de la pértiga con peligro de descarga eléctrica directa", "Pérdida de la fuerza mecánica de apertura únicamente", "Que la cañuela no caiga libremente", "Aumento de los tiempos de reconexión de los clientes"],
+                correcta: 0,
+                pista: "Una pértiga fisurada puede conducir electricidad si tiene humedad o suciedad interna."
+            },
+            {
+                id: 53,
+                modulo: "Blandas",
+                pregunta: "¿Cómo se define el comportamiento de 'Orientación al Logro' en el trabajo diario de la cuadrilla?",
+                opciones: ["Cumplir con las metas operativas de forma eficiente y bajo estándares de seguridad", "Realizar el trabajo de prisa sin importar los riesgos", "Completar la orden de trabajo ignorando la calidad técnica de los amarres", "Delegar todas las tareas difíciles para asegurar metas individuales"],
+                correcta: 0,
+                pista: "Alcanzar el éxito en la operación de forma segura y duradera."
+            },
+            {
+                id: 54,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de las redes de media tensión se encarga de censar corrientes de cortocircuito y ordenar aperturas automáticas temporizadas para despejar fallas?",
+                opciones: ["Restaurador automático (Recloser)", "Fusible de expulsión en cañuela", "Seccionalizador manual unipersonal", "Pararrayos de montaje en poste"],
+                correcta: 0,
+                pista: "Es un equipo inteligente que distingue entre fallas temporales (ramas) y permanentes."
+            },
+            {
+                id: 55,
+                modulo: "SISO",
+                pregunta: "Según la Política Ambiental de EEGSA, ¿cuál es uno de los compromisos clave en la prevención de la contaminación?",
+                opciones: ["El manejo integral de residuos, reducción de emisiones y control de fugas de aceites minerales", "Suspender la distribución de energía en áreas boscosas", "La sustitución del cobre por aluminio en todas las líneas", "La reforestación de áreas verdes lejanas a la infraestructura"],
+                correcta: 0,
+                pista: "Mitiga los impactos de nuestras actividades cotidianas."
+            },
+            {
+                id: 56,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de herraje se utiliza para sujetar las retenidas de cable de acero al ancla de tierra (varilla de anclaje)?",
+                opciones: ["Guardacabo y mordaza tipo preformado para retenida o grapas de tres pernos", "Perno espiga de ojo corto", "Conector de compresión tipo derivación", "Abrazadera de acero ajustable tipo omega"],
+                correcta: 0,
+                pista: "Mantiene la tensión mecánica de soporte del poste."
+            },
+            {
+                id: 57,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el principal peligro de usar herramientas no aisladas en cercanías de circuitos residenciales de baja tensión vivos?",
+                opciones: ["Provocar cortocircuitos entre fases o fase y neutro, con peligro de arco eléctrico", "Desgaste acelerado de los filos de corte de la herramienta", "Desmagnetización de los instrumentos de medición", "Pérdida de torque de apriete mecánico"],
+                correcta: 0,
+                pista: "El metal sin aislar puede hacer puente entre puntos con diferente voltaje."
+            },
+            {
+                id: 58,
+                modulo: "Técnico",
+                pregunta: "En una red de baja tensión balanceada, ¿cuánta corriente fluye normalmente a través del conductor de neutro común?",
+                opciones: ["Una corriente cercana a cero amperios", "La suma total de las corrientes de fase", "El doble de la corriente de la fase mayor", "La corriente máxima de cortocircuito nominal"],
+                correcta: 0,
+                pista: "En un sistema perfectamente balanceado de tres fases, las corrientes se cancelan en el punto de estrella neutro."
+            },
+            {
+                id: 59,
+                modulo: "SISO",
+                pregunta: "Al trabajar en postes de concreto, ¿cuál es el peligro latente si se usan estribos o escaleras metálicas sin gomas aislantes?",
+                opciones: ["Riesgo de descarga eléctrica por arco de fuga a tierra a través de la estructura de concreto húmedo", "Daño estético a la superficie del poste de concreto", "Aumento de la fatiga muscular del liniero", "Que la escalera resbale por falta de fricción lateral"],
+                correcta: 0,
+                pista: "El concreto húmedo puede conducir electricidad si tiene armadura interna de acero."
+            },
+            {
+                id: 60,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la función principal de los aisladores de disco de porcelana o poliméricos instalados en cadenas?",
+                opciones: ["Aislar eléctricamente el conductor primario de la estructura del poste o cruceta sometida a esfuerzos de tensión mecánica", "Evitar el desgaste de los hilos de aluminio del cable", "Proteger las crucetas de la radiación solar directa", "Mejorar la conductividad mecánica de la línea"],
+                correcta: 0,
+                pista: "Soportan la fuerza física del tiro mecánico del cable y aíslan el voltaje."
+            },
+
+            // 61 - 70
+            {
+                id: 61,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente del transformador tipo Padmounted protege la red primaria desenergizando el transformador ante sobrecorrientes severas?",
+                opciones: ["Fusible Bay-O-Net en combinación con fusible limitador de corriente", "El switch de aceite de operación con carga", "Los terminales de conexión secundaria tipo espada", "La válvula de drenaje de fluidos dieléctricos"],
+                correcta: 0,
+                pista: "Este portafusible se extrae con pértiga y contiene un elemento fusible sumergido en aceite."
+            },
+            {
+                id: 62,
+                modulo: "SISO",
+                pregunta: "Según el RETIE, ¿cuál es el procedimiento mínimo para habilitar el uso de herramientas eléctricas manuales bajo la lluvia?",
+                opciones: ["Se prohíbe el uso de herramientas eléctricas manuales de alimentación externa bajo la lluvia a menos que cuenten con aislamiento doble y protección GFCI", "Se pueden usar si el operario tiene guantes de lona secos", "Se permite si se cubren con plástico común de empaque", "No hay restricción de uso si la herramienta es de marca certificada"],
+                correcta: 0,
+                pista: "La humedad extrema y la lluvia reducen drásticamente la resistencia del aislamiento de la herramienta."
+            },
+            {
+                id: 63,
+                modulo: "Blandas",
+                pregunta: "Durante una jornada extendida por atención de averías climáticas, ¿cómo se lidera con 'Inteligencia Emocional'?",
+                opciones: ["Mantener la calma frente a la presión del despacho, enfocarse en la seguridad física y guiar al equipo con positivismo", "Acelerar las maniobras para irse a casa más rápido, ignorando pasos menores", "Discutir airadamente con los operadores de despacho para exigir descansos inmediatos", "Dejar que los aprendices asuman las tareas difíciles para descargar la presión del equipo"],
+                correcta: 0,
+                pista: "El control emocional en condiciones de estrés previene los accidentes por fatiga."
+            },
+            {
+                id: 64,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de conector se utiliza para derivar una línea viva primaria de media tensión utilizando pértiga shotgun?",
+                opciones: ["Grapa de línea viva (Hot Line Clamp)", "Manga de unión a compresión hidráulica", "Conector tipo perno partido de bronce", "Conector de derivación perforante tipo IPC de baja tensión"],
+                correcta: 0,
+                pista: "Tiene un ojo de bronce donde encastra el gancho de la pértiga para su apriete en la fase."
+            },
+            {
+                id: 65,
+                modulo: "SISO",
+                pregunta: "En una maniobra de izado de poste, ¿qué cuerda de seguridad se ata a la punta para guiar y controlar el poste evitando oscilaciones?",
+                opciones: ["Vientos o retenidas de soga de maniobra no conductoras", "Cable de acero galvanizado flexible de un cuarto de pulgada", "Slinga de lona plana de alta capacidad", "Cadena de tracción con terminales de gancho"],
+                correcta: 0,
+                pista: "Permiten que el personal de piso controle el giro del poste a distancia segura."
+            },
+            {
+                id: 66,
+                modulo: "Técnico",
+                pregunta: "En una subestación, ¿cuál es la función de los bancos de capacitores instalados en paralelo en la red?",
+                opciones: ["Suministrar potencia reactiva inductiva y corregir el factor de potencia", "Aplanar los armónicos de alta frecuencia de los clientes", "Reducir las sobretensiones atmosféricas transitorias", "Elevar la frecuencia del sistema de distribución"],
+                correcta: 0,
+                pista: "Compensan las pérdidas reactivas causadas por cargas inductivas (motores)."
+            },
+            {
+                id: 67,
+                modulo: "SISO",
+                pregunta: "¿Por qué es obligatorio el uso de gafas de protección ocular al operar cortacircuitos fusibles de media tensión?",
+                opciones: ["Para proteger los ojos de la caída de residuos de porcelana, chispas o partículas calientes de la cañuela", "Para mejorar el contraste visual con el cielo", "Para evitar que la radiación solar dañe la retina durante la maniobra", "Para prevenir el ingreso de polvo ambiental únicamente"],
+                correcta: 0,
+                pista: "La expulsión del fusible libera gases calientes y material incandescente."
+            },
+            {
+                id: 68,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de la red aérea se encarga de cambiar la dirección del flujo de energía primaria o de aislar ramales mediante operación manual?",
+                opciones: ["Seccionador de cuchillas de apertura en vacío o K.P.F.", "Restaurador automático inteligente de subestación", "Cables de potencia subterráneos de media tensión", "Transformador de potencia acoplado en delta"],
+                correcta: 0,
+                pista: "Permiten la apertura mecánica visible mediante pértigas."
+            },
+            {
+                id: 69,
+                modulo: "SISO",
+                pregunta: "De acuerdo con el manual de primeros auxilios, ¿cuál es la primera maniobra de reanimación si un accidentado no respira y no tiene pulso?",
+                opciones: ["Reanimación Cardiopulmonar (RCP) mediante compresiones de alta calidad y ventilaciones", "Echarle agua fría en el rostro", "Aplicar masajes musculares en las extremidades", "Esperar inmóviles a que llegue la ambulancia de soporte vital"],
+                correcta: 0,
+                pista: "Mantiene el flujo de sangre oxigenada hacia el cerebro."
+            },
+            {
+                id: 70,
+                modulo: "Técnico",
+                pregunta: "Al conectar un banco de transformadores en paralelo, ¿qué condición eléctrica crítica se debe cumplir además de la misma relación de voltajes?",
+                opciones: ["Tener la misma impedancia equivalente y la misma polaridad/desplazamiento angular", "Contar con el mismo tipo de aceite mineral dieléctrico", "Tener carcasas metálicas del mismo color", "Haber sido fabricados en la misma fecha calendario"],
+                correcta: 0,
+                pista: "Evita corrientes circulantes internas destructivas en vacío."
+            },
+
+            // 71 - 80
+            {
+                id: 71,
+                modulo: "Técnico",
+                pregunta: "¿Qué indica la marca o anillo límite en una pértiga telescópica de maniobra?",
+                opciones: ["El límite hasta donde el operario puede colocar sus manos para mantener las distancias de seguridad", "El punto de unión de los acoples base", "El lugar donde se debe instalar el cabezal metálico", "La marca de fabricación aprobada por el laboratorio"],
+                correcta: 0,
+                pista: "Su función es delimitar el tramo de agarre seguro."
+            },
+            {
+                id: 72,
+                modulo: "SISO",
+                pregunta: "De acuerdo con los 12 principios de seguridad, ¿cuál es el principio relacionado con el orden y limpieza de las áreas de trabajo?",
+                opciones: ["Principio 10", "Principio 3", "Principio 1", "Principio 12"],
+                correcta: 0,
+                pista: "El orden previene accidentes por tropiezos o herramientas extraviadas."
+            },
+            {
+                id: 73,
+                modulo: "Técnico",
+                pregunta: "¿Cómo se llama la pinza o accesorio de la pértiga shotgun que aprisiona la anilla de los conectores de línea viva?",
+                opciones: ["Gancho retráctil de control o mandíbula de agarre", "Cabezal de tornillo mariposa", "Adaptador estriado universal", "Puntero metálico de encastre continuo"],
+                correcta: 0,
+                pista: "Se retrae mediante el gatillo mecánico deslizante del mango."
+            },
+            {
+                id: 74,
+                modulo: "Blandas",
+                pregunta: "En una situación de emergencia eléctrica, ¿cómo demuestra un liniero 'Confianza en Sí Mismo' sin caer en negligencia?",
+                opciones: ["Siguiendo estrictamente los protocolos de seguridad entrenados, comunicando sus decisiones y deteniendo maniobras dudosas", "Afrontando el riesgo sin protección para demostrar su valentía", "Guardando silencio ante maniobras incorrectas de sus superiores", "Permitiendo que los operarios inexpertos decidan los pasos de la maniobra"],
+                correcta: 0,
+                pista: "La confianza real está respaldada por el conocimiento normativo."
+            },
+            {
+                id: 75,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de media tensión se instala sobre los transformadores de distribución para protegerlos contra sobrecorrientes en su devanado primario?",
+                opciones: ["Cortacircuito fusible (cañuela)", "Pararrayos de óxido de zinc", "Conector tipo zapata de compresión", "Aislador de suspensión en suspensión"],
+                correcta: 0,
+                pista: "Contiene un fusible de hilo de plata u estaño calibrado en amperios."
+            },
+            {
+                id: 76,
+                modulo: "SISO",
+                pregunta: "¿Qué define el término 'Distancia de Seguridad Eléctrica'?",
+                opciones: ["La separación mínima en aire para evitar la descarga disruptiva o arco eléctrico entre conductores o conductor-tierra", "La longitud total del conductor primario", "El espacio entre dos postes consecutivos de concreto", "La distancia del cable al centro de la vía pavimentada"],
+                correcta: 0,
+                pista: "Evita que el campo eléctrico rompa el aislamiento del aire."
+            },
+            {
+                id: 77,
+                modulo: "Técnico",
+                pregunta: "Al manipular un regulador de voltaje en el campo, ¿qué se debe hacer obligatoriamente en el panel de control antes de colocar la perilla de bypass en la posición de salida?",
+                opciones: ["Colocar el indicador de paso en la posición cero (neutral) para evitar corrientes de circulación destructivas", "Desconectar los pararrayos asociados", "Verificar que el regulador esté a máxima tensión de regulación", "Apagar el interruptor de baja tensión únicamente"],
+                correcta: 0,
+                pista: "La posición neutral o cero garantiza que no haya diferencia de tensión entre la entrada y salida."
+            },
+            {
+                id: 78,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la función principal del arnés anticaídas de cuerpo completo que utiliza el liniero?",
+                opciones: ["Soportar y distribuir la fuerza de impacto de una caída evitando daños severos en la columna o la pelvis", "Sujetar el cinturón portaherramientas del operario", "Permitir el ascenso sin necesidad de usar los pies", "Proteger la zona lumbar de esfuerzos mecánicos de carga únicamente"],
+                correcta: 0,
+                pista: "Es el equipo que retiene al operario de forma segura si la plataforma colapsa."
+            },
+            {
+                id: 79,
+                modulo: "Técnico",
+                pregunta: "En los sistemas de media tensión, ¿qué función cumple la armadura de acero o pantalla metálica de un cable de potencia subterráneo?",
+                opciones: ["Confinar el campo eléctrico del conductor, canalizar corrientes de fuga a tierra y brindar protección mecánica", "Aumentar la resistencia del aislamiento de PVC exterior", "Evitar la entrada de humedad de forma exclusiva", "Sostener el peso físico del cable en los ductos verticales"],
+                correcta: 0,
+                pista: "Homogeneiza el campo eléctrico alrededor de la fase."
+            },
+            {
+                id: 80,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la diferencia constructiva principal entre una pértiga telescópica y una pértiga universal acoplable?",
+                opciones: ["La telescópica se desliza por secciones internas, mientras que la universal se compone de tramos rígidos acoplados manualmente", "La telescópica es de metal y la universal es de fibra de vidrio", "La universal no soporta herramientas en la punta", "La telescópica es exclusivamente para trabajos en baja tensión"],
+                correcta: 0,
+                pista: "La telescópica se extiende de forma continua de menor a mayor longitud."
+            },
+
+            // 81 - 90
+            {
+                id: 81,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la máxima tensión nominal para la cual están diseñadas las mantas dieléctricas de protección Clase 4?",
+                opciones: ["36,000 voltios AC (tensión de uso)", "17,000 voltios AC", "5,000 voltios AC", "1,000 voltios AC"],
+                correcta: 0,
+                pista: "Se utilizan en sistemas de alta media tensión para aislamiento secundario."
+            },
+            {
+                id: 82,
+                modulo: "Técnico",
+                pregunta: "En una red trifásica, ¿qué ocurre si hay una pérdida accidental del neutro secundario con cargas desbalanceadas?",
+                opciones: ["Desplazamiento del neutro provocando sobrevoltajes destructivos en unas fases y bajo voltaje en otras", "Aumento instantáneo de la frecuencia a 120 Hz", "Disparo automático de las protecciones de la subestación principal", "Inversión de giro en los motores monofásicos de los clientes"],
+                correcta: 0,
+                pista: "El neutro mantiene el punto de equilibrio de tensión para los aparatos monofásicos."
+            },
+            {
+                id: 83,
+                modulo: "Blandas",
+                pregunta: "Al recibir críticas constructivas del supervisor sobre un procedimiento técnico defectuoso, ¿cuál debe ser la actitud del liniero?",
+                opciones: ["Asumir la crítica con humildad, analizar la falla técnica y corregir el comportamiento en las siguientes maniobras", "Discutir airadamente para justificar que siempre se ha hecho de esa manera", "Ignorar las sugerencias por considerar que cuenta con más destreza física", "Reportar al supervisor por supuesto acoso laboral"],
+                correcta: 0,
+                pista: "La retroalimentación técnica es el pilar de la mejora continua y prevención de accidentes."
+            },
+            {
+                id: 84,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de las cuchillas unipolares de MT recibe el impacto del arco eléctrico durante su maniobra manual de apertura?",
+                opciones: ["Los cuernos de arqueo", "La base de porcelana", "El conector tipo zapata de entrada", "La mariposa de apriete del puente"],
+                correcta: 0,
+                pista: "Están diseñados para desviar el arco de los contactos principales de cobre."
+            },
+            {
+                id: 85,
+                modulo: "SISO",
+                pregunta: "Al excavar para la cimentación de una estructura de poste de concreto, ¿cuál es la profundidad promedio reglamentaria en función de la longitud del poste (L)?",
+                opciones: ["L/10 + 0.60 metros", "L/5 metros", "1.0 metro fijo para cualquier poste", "L/15 + 1.0 metro"],
+                correcta: 0,
+                pista: "Es la fórmula estándar para garantizar la estabilidad mecánica del poste frente al viento."
+            },
+            {
+                id: 86,
+                modulo: "Técnico",
+                pregunta: "¿Qué es un transformador autoprotegido tipo CSP?",
+                opciones: ["Aquel que cuenta con pararrayos, fusible de expulsión interno y disyuntor de baja tensión integrados de fábrica", "Un transformador que no requiere conexión a tierra", "Un equipo con bobinado de cobre criogénico", "Un transformador que solo se puede instalar de forma subterránea"],
+                correcta: 0,
+                pista: "Protege el sistema de sobrecorrientes y sobretensiones sin necesidad de herrajes externos."
+            },
+            {
+                id: 87,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el riesgo si el operario utiliza guantes de protección de cuero mojados sobre los guantes dieléctricos de goma?",
+                opciones: ["La humedad reduce la resistencia del guante de cuero y favorece la conducción por corrientes superficiales", "Dañar el acabado brillante del guante dieléctrico de goma", "Perder la flexibilidad física del guante de cuero únicamente", "Que el guante se encoja de forma permanente por la fricción"],
+                correcta: 0,
+                pista: "El agua es un excelente conductor eléctrico."
+            },
+            {
+                id: 88,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de amarre preformado se utiliza para fijar el conductor a un aislador de espiga en tramos rectos de línea aérea?",
+                opciones: ["Amarre preformado de espiga (Top Tie)", "Amarre preformado de retención", "Manga de empalme a compresión de tensión total", "Grapa tipo pistola de aluminio"],
+                correcta: 0,
+                pista: "Se instala sobre la cabeza o cuello del aislador en tramos de paso."
+            },
+            {
+                id: 89,
+                modulo: "SISO",
+                pregunta: "¿Por qué es obligatorio instalar avisos y señales de advertencia en las cercanías de una zona de trabajo con grúas?",
+                opciones: ["Para advertir a peatones y vehículos, evitando accidentes por caída de materiales o contacto con la grúa", "Para cumplir únicamente con un requisito administrativo de la municipalidad", "Para promocionar la imagen corporativa de la distribuidora", "Para delimitar el área donde se guardan los camiones al finalizar"],
+                correcta: 0,
+                pista: "La seguridad colectiva es prioritaria en la vía pública."
+            },
+            {
+                id: 90,
+                modulo: "Técnico",
+                pregunta: "En una subestación, ¿cuál es el propósito de un transformador de potencial (TP)?",
+                opciones: ["Reducir los valores de tensión de las barras a niveles de 120V para equipos de medición y protección", "Elevar la tensión de distribución a niveles de alta tensión", "Medir la resistencia del suelo de la subestación", "Filtrar las descargas atmosféricas transitorias de barra"],
+                correcta: 0,
+                pista: "Permite la medición segura de altos voltajes reduciéndolos proporcionalmente."
+            },
+
+            // 91 - 100
+            {
+                id: 91,
+                modulo: "Técnico",
+                pregunta: "Según las buenas prácticas, ¿qué distancia mínima de aproximación (MAD) debe guardarse en circuitos primarios de 34.5 kV?",
+                opciones: ["0.90 metros (aproximado, según tablas estándar)", "0.30 metros", "2.50 metros", "5.00 metros"],
+                correcta: 0,
+                pista: "A mayor voltaje, mayor es la separación mínima de seguridad en el aire."
+            },
+            {
+                id: 92,
+                modulo: "SISO",
+                pregunta: "De acuerdo con los 12 principios de seguridad, ¿qué acción es obligatoria si presencias una condición insegura grave en el campo?",
+                opciones: ["Detener el trabajo de forma inmediata y reportar al supervisor", "Continuar con cuidado hasta finalizar la tarea asignada", "Ignorar la condición si no afecta de forma directa tu labor", "Tomar fotos de forma oculta para un informe mensual"],
+                correcta: 0,
+                pista: "La prevención de accidentes es responsabilidad de todos."
+            },
+            {
+                id: 93,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente mecánico se encarga de acoplar de forma rígida dos crucetas de madera en una estructura tipo H?",
+                opciones: ["Pernos de doble armadura y espaciadores metálicos", "Conectores a compresión tipo cuña", "Abrazaderas tipo U de acero galvanizado", "Pernos coche de cabeza redonda"],
+                correcta: 0,
+                pista: "Mantiene la alineación y rigidez estructural de las maderas gemelas."
+            },
+            {
+                id: 94,
+                modulo: "Blandas",
+                pregunta: "¿Cuál es una conducta clave de 'Orientación al Servicio' por parte de un equipo de atención de averías de EEGSA?",
+                opciones: ["Restablecer el servicio de forma segura y eficiente, manteniendo informado al cliente sobre la avería", "Terminar las maniobras rápidamente sin verificar la tensión de los clientes", "Ignorar las consultas de los clientes que se acercan con dudas", "Priorizar a los clientes residenciales sobre los servicios de hospitales"],
+                correcta: 0,
+                pista: "Un trato empático con el cliente forma parte de la misión corporativa."
+            },
+            {
+                id: 95,
+                modulo: "Técnico",
+                pregunta: "En los sistemas de distribución de EEGSA, ¿para qué sirve una cuchilla de bypass asociada a un recloser o seccionalizador?",
+                opciones: ["Para puentear el equipo permitiendo su retiro o mantenimiento sin interrumpir el suministro eléctrico", "Para cortocircuitar las tres fases en caso de falla grave", "Para medir la tensión de línea con el equipo apagado", "Para desviar las descargas atmosféricas a la red de tierra"],
+                correcta: 0,
+                pista: "Permite aislar eléctricamente el equipo para mantenimiento manteniéndolo energizado."
+            },
+            {
+                id: 96,
+                modulo: "SISO",
+                pregunta: "¿Por qué es crítico no utilizar joyas o anillos metálicos durante las labores de campo?",
+                opciones: ["Porque actúan como excelentes conductores térmicos y eléctricos, aumentando el peligro de arco o choque", "Para evitar que se pierdan o dañen durante las maniobras físicas", "Porque pueden engancharse en el cabello de los compañeros", "Por un requisito estético e institucional de la empresa"],
+                correcta: 0,
+                pista: "El metal cerca de circuitos de corriente aumenta dramáticamente el peligro de arco localizado."
+            },
+            {
+                id: 97,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de conector se utiliza en las redes primarias aéreas para unir de forma mecánica y eléctrica conductores de aluminio?",
+                opciones: ["Conectores tipo cuña (Wedge Connector) o empalmes a compresión hidráulica", "Conectores tipo perno partido de bronce común", "Cinta de vulcanizar de alta fusión", "Grapas de amarre de dos pernos de acero"],
+                correcta: 0,
+                pista: "Garantizan baja resistencia de contacto eléctrico y alta resistencia a la tensión mecánica."
+            },
+            {
+                id: 98,
+                modulo: "SISO",
+                pregunta: "Al trabajar en cercanías de líneas de baja tensión, ¿por qué es obligatorio colocar mangueras protectoras en los cables secundarios desnudos?",
+                opciones: ["Para evitar cortocircuitos accidentales generados por el contacto con herramientas o postes", "Para proteger el cable de la radiación solar", "Para mejorar el factor de potencia del sistema residencial", "Para evitar que las aves toquen los conductores"],
+                correcta: 0,
+                pista: "Sirven de barrera dieléctrica provisoria durante el trabajo."
+            },
+            {
+                id: 99,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de una subestación de distribución desenergiza un circuito alimentador ante una corriente que excede el valor de ajuste?",
+                opciones: ["Disyuntor o interruptor de potencia de media tensión", "Transformador de potencial de control", "Seccionador manual de barras principales", "Banco de capacitores automático"],
+                correcta: 0,
+                pista: "Es el dispositivo principal de corte bajo corrientes de cortocircuito severas."
+            },
+            {
+                id: 100,
+                modulo: "Técnico",
+                pregunta: "En una red de baja tensión balanceada con conductores de cobre, ¿cuál es el voltaje medido entre fases estándar?",
+                opciones: ["240 V AC", "120 V AC", "13.2 kV", "480 V AC"],
+                correcta: 0,
+                pista: "Es el voltaje estándar de entrada a comercios medianos y residencias de gran consumo."
+            },
+
+            // 101 - 110
+            {
+                id: 101,
+                modulo: "SISO",
+                pregunta: "¿Qué tipo de lesiones produce el fenómeno del 'Arco Eléctrico' en la piel humana sin contacto directo con el conductor?",
+                opciones: ["Quemaduras térmicas severas por radiación infrarroja y ultravioleta e impacto de cobre fundido", "Infecciones dérmicas bacterianas de avance rápido", "Congelamiento localizado de tejidos superficiales", "Pérdida de elasticidad muscular temporal únicamente"],
+                correcta: 0,
+                pista: "La temperatura del arco puede superar la de la superficie solar."
+            },
+            {
+                id: 102,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es la función específica de la válvula de alivio de presión instalada en los transformadores de distribución?",
+                opciones: ["Liberar de forma segura el exceso de presión interna acumulada por gases y calor en el tanque", "Permitir la entrada de aire del exterior para enfriar el aceite", "Drenar el agua condensada en la base del transformador", "Ajustar la relación de transformación interna de forma automática"],
+                correcta: 0,
+                pista: "Evita explosiones catastróficas del tanque del transformador."
+            },
+            {
+                id: 103,
+                modulo: "Blandas",
+                pregunta: "Durante una jornada de maniobras complejas de TCT, ¿por qué es crítico mantener la 'Escucha Activa' con el operario de hidroelevador?",
+                opciones: ["Para evitar malentendidos en la coordinación de movimientos que puedan violar las distancias de seguridad", "Para evaluar el tono de voz de los compañeros únicamente", "Para distraer el cansancio físico durante la labor aérea", "Para coordinar los tiempos de descanso de forma informal"],
+                correcta: 0,
+                pista: "Un comando mal escuchado en altura puede provocar un contacto fatal."
+            },
+            {
+                id: 104,
+                modulo: "Técnico",
+                pregunta: "En una subestación de distribución, ¿para qué sirven los seccionadores bypass instalados en las celdas de media tensión?",
+                opciones: ["Para aislar un interruptor de potencia permitiendo su mantenimiento sin interrumpir el suministro del circuito", "Para derivar las descargas atmosféricas directo a tierra de barra", "Para medir la corriente nominal de las fases con amperímetro", "Para cambiar el sentido de flujo de los transformadores"],
+                correcta: 0,
+                pista: "Permiten que el circuito siga energizado desde una barra de transferencia."
+            },
+            {
+                id: 105,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la forma reglamentaria de transportar las escaleras de fibra de vidrio en los camiones de servicio?",
+                opciones: ["En soportes laterales o de techo con abrazaderas de traba de seguridad acolchadas", "Sueltas sobre los transformadores de repuesto", "En el suelo de la cabina del conductor", "Atadas con cintas aislantes de vinilo de alta adherencia"],
+                correcta: 0,
+                pista: "Evita que sufran desgaste por vibraciones o golpes que dañen su fibra."
+            },
+            {
+                id: 106,
+                modulo: "Técnico",
+                pregunta: "¿Qué tipo de herraje se monta en un poste para sostener conductores secundarios de baja tensión de forma horizontal?",
+                opciones: ["Bastidor o rack secundario con aisladores de carrete", "Perno espiga para cruceta de madera", "Grapa de pistola para retención primaria", "Abrazadera tipo omega ajustable para poste"],
+                correcta: 0,
+                pista: "Aloja de 1 a 4 aisladores de carrete donde se sujetan las líneas de baja tensión."
+            },
+            {
+                id: 107,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el principal peligro asociado a realizar trabajos de poda de árboles cerca de líneas primarias sin pértigas aisladas?",
+                opciones: ["Que la rama húmeda haga puente conductor entre la fase viva y el operario, provocando electrocución", "Dañar el filo de las herramientas de poda comunes", "Provocar el desprendimiento de hojas que bloqueen las vías", "Disminuir la resistencia física del árbol únicamente"],
+                correcta: 0,
+                pista: "La madera verde y húmeda es un buen conductor eléctrico a media tensión."
+            },
+            {
+                id: 108,
+                modulo: "Técnico",
+                pregunta: "En un circuito alimentador trifásico de MT, ¿qué tipo de falla genera las corrientes de cortocircuito más elevadas y destructivas?",
+                opciones: ["Falla trifásica franca (contacto directo entre las tres fases)", "Falla monofásica a tierra física", "Falla bifásica aislada", "Fuga a tierra de alta impedancia"],
+                correcta: 0,
+                pista: "Es un cortocircuito simétrico de bajísima impedancia que drena corriente de todas las fases."
+            },
+            {
+                id: 109,
+                modulo: "SISO",
+                pregunta: "¿Qué tipo de calzado de protección es obligatorio para el liniero de media tensión?",
+                opciones: ["Botas dieléctricas de cuero, sin componentes metálicos expuestos y con suela antideslizante", "Zapatos de seguridad de puntera metálica expuesta", "Zapatos de lona o hule ligeros para fácil movilidad", "Botas de caucho para agua de suela lisa sin taco de soporte"],
+                correcta: 0,
+                pista: "Aíslan los pies de corrientes de fuga por contacto de suelo."
+            },
+            {
+                id: 110,
+                modulo: "Técnico",
+                pregunta: "En una subestación de distribución de 13.2 kV, ¿cuál es el medio dieléctrico líquido que llena el tanque de los transformadores de potencia de gran escala?",
+                opciones: ["Aceite mineral dieléctrico refinado o aceite vegetal sintético FR3", "Agua destilada desmineralizada de alta pureza", "Gas freón a alta presión encapsulado", "Solución alcalina a base de silicio orgánico"],
+                correcta: 0,
+                pista: "Aísla las bobinas de la carcasa y disipa el calor térmico hacia los radiadores externos."
+            },
+
+            // 111 - 120
+            {
+                id: 111,
+                modulo: "Técnico",
+                pregunta: "Al usar una pértiga shotgun para instalar un conector de línea viva, ¿cuál es el movimiento correcto para asegurar el apriete?",
+                opciones: ["Girar la pértiga sobre su propio eje en sentido de las agujas del reloj hasta el torque especificado", "Apretar el gatillo del mango de forma intermitente", "Empujar de forma frontal con fuerza de impacto", "Deslizar las manos sobre el anillo de hule protector"],
+                correcta: 0,
+                pista: "El apriete es por rotación del cuerpo de la pértiga."
+            },
+            {
+                id: 112,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el principal peligro de usar un arnés de seguridad que ha sufrido el impacto físico de una caída real?",
+                opciones: ["Pérdida de la resistencia estructural de las costuras y bandas, pudiendo fallar ante un nuevo impacto", "Dificultad mecánica para colocar el cinturón portaherramientas", "Pérdida de la flexibilidad de la lona plástica", "Que el arnés se ensucie con restos de óxido de postes"],
+                correcta: 0,
+                pista: "Por norma internacional, todo arnés que experimente una caída debe descartarse inmediatamente."
+            },
+            {
+                id: 113,
+                modulo: "Blandas",
+                pregunta: "En la unidad de Habilidades Blandas, ¿cuál es el principal obstáculo para desarrollar una 'Confianza en Sí Mismo' sana?",
+                opciones: ["La dependencia excesiva de la aprobación externa y el miedo limitante al fracaso", "La falta de destrezas de atletismo o fuerza física de carga", "Haber recibido capacitación técnica continua en subestaciones", "Seguir las instrucciones escritas de seguridad de forma estricta"],
+                correcta: 0,
+                pista: "El miedo al error paraliza las decisiones seguras."
+            },
+            {
+                id: 114,
+                modulo: "Técnico",
+                pregunta: "¿Qué componente de una cruceta de madera de media tensión absorbe los esfuerzos mecánicos laterales provocados por el viento sobre las fases?",
+                opciones: ["Tirantes o diagonales de acero galvanizado (crucetas de viento)", "Pernos espiga cortos de cabeza plana", "Abrazaderas tipo omega para poste", "Arandelas de presión cuadradas de acero"],
+                correcta: 0,
+                pista: "Evitan que la cruceta de madera rote o se incline bajo carga de tracción lateral."
+            },
+            {
+                id: 115,
+                modulo: "SISO",
+                pregunta: "Según los 12 principios de seguridad, ¿cuál es el principio número 12?",
+                opciones: ["Me aseguro de que todas las puestas a tierra estén bien instaladas antes de intervenir", "Sigo las 5 Reglas de Oro en mis trabajos eléctricos", "Mantengo el orden y limpieza de mi área", "Utilizo el EPP completo y adecuado para cada tarea"],
+                correcta: 0,
+                pista: "Es la regla final del ciclo de oro de la cultura preventiva."
+            },
+            {
+                id: 116,
+                modulo: "Técnico",
+                pregunta: "¿Cuál es el propósito del ensayo dieléctrico periódico al que deben someterse los camiones hidroelevadores de TCT?",
+                opciones: ["Verificar que el tramo aislado del brazo y la barquilla mantengan su capacidad aislante ante tensiones nominales", "Medir la velocidad de descenso del brazo hidráulico", "Comprobar el desgaste de los pistones de la base mecánica", "Asegurar que el camión no consuma energía de la red aérea"],
+                correcta: 0,
+                pista: "Garantiza que la pluma aislada sea segura para trabajar a contacto en MT."
+            },
+            {
+                id: 117,
+                modulo: "SISO",
+                pregunta: "¿Cuál es el peligro de aproximar las herramientas de TCT a fuentes de calor extremo o llamas directas?",
+                opciones: ["Degradación irreversible del polímero de fibra de vidrio y resina, anulando sus propiedades dieléctricas", "Cambio en la tonalidad del color de fábrica únicamente", "Pérdida de la garantía del fabricante de forma comercial", "Aumento del peso molecular de la resina epóxica"],
+                correcta: 0,
+                pista: "La fibra de vidrio y las resinas epoxi son termoplásticas o termoestables; el calor rompe sus uniones moleculares."
+            },
+            {
+                id: 118,
+                modulo: "Técnico",
+                pregunta: "En una red de media tensión de 13.2 kV, ¿qué función cumple la 'cruceta de madera' en comparación con una de metal?",
+                opciones: ["Aporta un nivel de aislamiento adicional por madera seca frente a fallas transitorias de aisladores", "Disminuye el peso físico de la estructura de poste", "Evita la atracción de rayos atmosféricos de forma directa", "Mejorar el tendido de los cables de baja tensión de forma horizontal"],
+                correcta: 0,
+                pista: "La madera tratada actúa como un aislante natural secundario en caso de ruptura del aislador primario."
+            },
+            {
+                id: 119,
+                modulo: "SISO",
+                pregunta: "¿Cuál es la forma correcta de bajar a un herido inconsciente que ha quedado suspendido en un poste?",
+                opciones: ["Utilizando el sistema de rescate en altura (poleas y cuerda de servicio no conductora) aprobado por la norma SISO", "Cortar la slinga del arnés del compañero para que caiga de forma libre", "Subir cargándolo sobre los hombros sin cuerdas de seguridad", "Esperar que recupere el conocimiento antes de iniciar maniobras"],
+                correcta: 0,
+                pista: "El rescate seguro en altura es un procedimiento entrenado y normado."
+            },
+            {
+                id: 120,
+                modulo: "Técnico",
+                pregunta: "Para garantizar que una puesta a tierra temporal funcione eficientemente ante una falla, ¿cómo debe ser el valor de resistencia óhmica de la conexión?",
+                opciones: ["Lo más bajo posible (baja impedancia) para canalizar instantáneamente la corriente de falla a tierra", "Lo más alto posible para frenar la corriente de cortocircuito", "Exactamente igual a la resistencia del cable de la fase", "Cualquier valor es óptimo si los conectores son de cobre"],
+                correcta: 0,
+                pista: "La baja resistencia es clave para activar rápidamente los sistemas de protección de la red."
+            }
+        ];
+
+        // VARIABLES DE ESTADO DEL EXAMEN CONTINUO (1-120)
+        let currentIndex = 0;
+        const totalQuestions = PREGUNTAS.length;
+        const userAnswers = {}; // Guarda la respuesta del usuario de cada pregunta por id
+
+        // CARGA LA PREGUNTA ACTUAL
+        function loadQuestion() {
+            const q = PREGUNTAS[currentIndex];
+            
+            // Actualizar etiquetas visuales y barra de progreso
+            document.getElementById("question-number-text").innerText = `Pregunta ${currentIndex + 1} de ${totalQuestions}`;
+            
+            const progressPercent = Math.round(((currentIndex + 1) / totalQuestions) * 100);
+            document.getElementById("progress-percentage").innerText = `${progressPercent}%`;
+            document.getElementById("progress-fill").style.width = `${progressPercent}%`;
+
+            // Tag de Módulo
+            const tag = document.getElementById("module-tag");
+            tag.innerText = `Módulo ${q.modulo}`;
+            if (q.modulo === "Técnico") {
+                tag.className = "module-tag module-tecnico";
+            } else if (q.modulo === "SISO") {
+                tag.className = "module-tag module-siso";
+            } else {
+                tag.className = "module-tag module-blandas";
+            }
+
+            // Pregunta y Pista
+            document.getElementById("question-text").innerText = `${q.id}. ${q.pregunta}`;
+            document.getElementById("hint-box").style.display = "none";
+            document.getElementById("hint-box").innerText = q.pista;
+
+            // Opciones sin repetir y de manera limpia
+            const optionsContainer = document.getElementById("options-container");
+            optionsContainer.innerHTML = "";
+            
+            q.opciones.forEach((option, index) => {
+                const card = document.createElement("div");
+                card.className = "option-card";
+                card.id = `opt_${q.id}_${index}`;
+                
+                const isSelected = userAnswers[q.id] === index;
+                if (isSelected) {
+                    card.classList.add("selected");
+                }
+
+                card.innerHTML = `
+                    <input type="radio" name="q_${q.id}" value="${index}" ${isSelected ? 'checked' : ''} onchange="selectOption(${index})">
+                    <span>${option}</span>
+                `;
+                
+                card.onclick = () => selectOption(index);
+                optionsContainer.appendChild(card);
+            });
+
+            // Control de Botones de Navegación
+            document.getElementById("btn-prev").disabled = (currentIndex === 0);
+            if (currentIndex === totalQuestions - 1) {
+                document.getElementById("btn-next").innerText = "Finalizar Examen";
+            } else {
+                document.getElementById("btn-next").innerText = "Siguiente";
+            }
+        }
+
+        // CONTROL DE SELECCIÓN DE OPCIÓN
+        function selectOption(index) {
+            const q = PREGUNTAS[currentIndex];
+            userAnswers[q.id] = index;
+
+            // Limpiar selección previa visual
+            q.opciones.forEach((_, idx) => {
+                const card = document.getElementById(`opt_${q.id}_${idx}`);
+                if (card) card.classList.remove("selected");
+            });
+
+            // Marcar nueva selección visual
+            const selectedCard = document.getElementById(`opt_${q.id}_${index}`);
+            if (selectedCard) {
+                selectedCard.classList.add("selected");
+                const radio = selectedCard.querySelector('input[type="radio"]');
+                if (radio) radio.checked = true;
+            }
+        }
+
+        // DESPLEGAR PISTA DE CAMPO
+        function toggleHint() {
+            const hintBox = document.getElementById("hint-box");
+            if (hintBox.style.display === "none") {
+                hintBox.style.display = "block";
+            } else {
+                hintBox.style.display = "none";
+            }
+        }
+
+        // NAVEGAR ATRÁS
+        function navigatePrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                loadQuestion();
+            }
+        }
+
+        // NAVEGAR ADELANTE O FINALIZAR
+        function navigateNext() {
+            const q = PREGUNTAS[currentIndex];
+            
+            // Validar que se haya seleccionado una opción antes de avanzar
+            if (userAnswers[q.id] === undefined) {
+                alert("Por favor seleccione una respuesta antes de continuar.");
+                return;
+            }
+
+            if (currentIndex < totalQuestions - 1) {
+                currentIndex++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        // CALCULAR Y MOSTRAR RESULTADOS FINALES
+        function showResults() {
+            document.getElementById("exam-view").style.display = "none";
+            
+            let correctCount = 0;
+            PREGUNTAS.forEach((q) => {
+                if (userAnswers[q.id] === q.correcta) {
+                    correctCount++;
+                }
+            });
+
+            const percent = (correctCount / totalQuestions) * 100;
+            document.getElementById("final-score").innerText = `${percent.toFixed(1)}%`;
+            document.getElementById("correct-count").innerText = `${correctCount} de ${totalQuestions} Correctas`;
+
+            const feedback = document.getElementById("result-feedback");
+            const status = document.getElementById("result-status");
+
+            if (percent >= 80) {
+                status.innerText = "¡Felicidades! Examen Aprobado";
+                status.style.color = "var(--success)";
+                feedback.innerText = "Has demostrado un excelente dominio técnico de las redes de media tensión, las normas de seguridad SISO de EEGSA, reglamentos del RETIE y uso de herramientas aisladas para TcT.";
+            } else {
+                status.innerText = "Examen No Aprobado";
+                status.style.color = "var(--danger)";
+                feedback.innerText = "No has alcanzado la nota mínima requerida (80%). Te recomendamos repasar detenidamente los procedimientos normativos, el uso del Load Buster, cálculos de distancia MAD y realizar el examen de nuevo.";
+            }
+
+            document.getElementById("results-view").style.display = "block";
+        }
+
+        // REINICIAR LA PRUEBA
+        function restartQuiz() {
+            currentIndex = 0;
+            // Limpiar respuestas anteriores
+            for (const prop in userAnswers) {
+                if (userAnswers.hasOwnProperty(prop)) {
+                    delete userAnswers[prop];
+                }
+            }
+            document.getElementById("results-view").style.display = "none";
+            document.getElementById("exam-view").style.display = "block";
+            loadQuestion();
+        }
+
+        // INICIALIZACIÓN DE LA APLICACIÓN AL CARGAR LA PÁGINA
+        window.onload = function() {
+            loadQuestion();
+        };
+    </script>
+</body>
+</html>
